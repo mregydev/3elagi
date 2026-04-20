@@ -1,0 +1,564 @@
+{
+  "common": {
+    "yes": "Yes",
+    "no": "No",
+    "back": "Back",
+    "next": "Next",
+    "continue": "Continue",
+    "submit": "Submit",
+    "edit": "Edit",
+    "optional": "Optional",
+    "dash": "—",
+    "switchToArabic": "Switch to Arabic",
+    "switchToEnglish": "Switch to English",
+    "chooseLanguage": "Choose language",
+    "langArabic": "Arabic",
+    "langEnglish": "English",
+    "brandName": "3elagi"
+  },
+  "meta": {
+    "home": "3elagi — Find Doctors",
+    "login": "Login — 3elagi",
+    "signup": "Sign up — 3elagi",
+    "onboarding": "Set up your health profile — 3elagi",
+    "intake": "Pre-visit intake — 3elagi",
+    "queue": "Queue status — 3elagi",
+    "doctorProfile": "My profile — 3elagi",
+    "doctorQueue": "Queue management — 3elagi",
+    "waitingRoom": "Waiting room — 3elagi",
+    "doctorOnboarding": "Doctor verification — 3elagi"
+  },
+  "nav": {
+    "findDoctors": "Find Doctors",
+    "specialties": "Specialties",
+    "howItWorks": "How it works",
+    "login": "Login",
+    "signup": "Sign up"
+  },
+  "home": {
+    "searchMobile": "Search doctors or specialties…",
+    "searchDesktop": "Search doctors, specialties, clinics…",
+    "searchBtn": "Search",
+    "showing": "Showing",
+    "doctors": "doctors",
+    "inCairo": "in Cairo",
+    "doctorsFound": "doctors found",
+    "sortFilter": "Sort & Filter",
+    "relevance": "Relevance",
+    "rating": "Rating",
+    "priceLow": "Price: Low",
+    "specialty": "Specialty",
+    "allSpecialties": "All Specialties",
+    "availability": "Availability",
+    "anyTime": "Any time",
+    "today": "Today",
+    "tomorrow": "Tomorrow",
+    "thisWeek": "This week",
+    "consultationType": "Consultation Type",
+    "telemedicine": "Telemedicine",
+    "followUpVisits": "Follow-up Visits",
+    "ratingLabel": "Rating",
+    "fiveStars": "5 stars",
+    "fourPlus": "4+ stars",
+    "threePlus": "3+ stars",
+    "ophthalmology": "Ophthalmology",
+    "neurology": "Neurology"
+  },
+  "doctor": {
+    "availableToday": "Available Today",
+    "tomorrow": "Tomorrow",
+    "perVisit": "per visit",
+    "experience": "Experience",
+    "patients": "Patients",
+    "telemedicine": "Telemedicine",
+    "followUp": "Follow-up",
+    "selectAppointment": "Select Appointment",
+    "selected": "Selected",
+    "reserve": "Reserve",
+    "expYearsShort": "{n} yrs exp",
+    "reviewsCount": "{n} reviews"
+  },
+  "langs": {
+    "arabic": "Arabic",
+    "english": "English"
+  },
+  "details": {
+    "pageTitle": "Doctor Profile",
+    "doctorDetails": "Doctor Details",
+    "experience": "Experience",
+    "patients": "Patients",
+    "rating": "Rating",
+    "availableToday": "Available Today",
+    "telemedicine": "Telemedicine",
+    "followUp": "Follow-up",
+    "consultationFee": "Consultation fee",
+    "directions": "Directions",
+    "getDirections": "Get Directions",
+    "selectAppointment": "Select Appointment",
+    "reserveAppointment": "Reserve Appointment",
+    "reviews": "Reviews",
+    "seeAll": "See all 128",
+    "seeAllArrow": "128 total →",
+    "faq": "Frequently Asked Questions",
+    "selected": "Selected",
+    "confirmReservation": "Confirm Reservation",
+    "bookAppointment": "Book an Appointment",
+    "expSuffix": "exp.",
+    "selectedSlotPlaceholder": "—",
+    "faqs": [
+      {
+        "q": "Does Dr. Sara accept new patients?",
+        "a": "Yes, Dr. Sara is currently accepting new patients. You can book your first appointment directly through the platform."
+      },
+      {
+        "q": "What insurance plans are accepted?",
+        "a": "Dr. Sara accepts most major insurance plans including Allianz, AXA, MetLife, and Cairo Amman Bank health insurance. Please verify with the clinic before your visit."
+      },
+      {
+        "q": "Is telemedicine available for first visits?",
+        "a": "Telemedicine is available for follow-up visits and consultations that do not require a physical examination. First visits for new conditions typically require an in-person appointment."
+      },
+      {
+        "q": "How long are appointments typically?",
+        "a": "A standard consultation lasts approximately 20–30 minutes. Comprehensive cardiac evaluations may take up to 60 minutes."
+      },
+      {
+        "q": "Can I get a prescription online?",
+        "a": "Yes, for established patients with existing conditions, Dr. Sara can issue prescription renewals through the telemedicine platform."
+      },
+      {
+        "q": "What languages does the doctor speak?",
+        "a": "Dr. Sara speaks both Arabic and English fluently and conducts consultations in either language based on patient preference."
+      }
+    ],
+    "reviewSamples": [
+      {
+        "id": 1,
+        "name": "Ahmed M.",
+        "rating": 5,
+        "date": "March 2025",
+        "text": "Excellent doctor, very thorough and professional. Took her time to explain my condition in full. Highly recommend."
+      },
+      {
+        "id": 2,
+        "name": "Sara K.",
+        "rating": 4,
+        "date": "February 2025",
+        "text": "Great experience overall. Minimal wait time and a very clear explanation of the treatment plan."
+      },
+      {
+        "id": 3,
+        "name": "Omar F.",
+        "rating": 5,
+        "date": "January 2025",
+        "text": "Dr. Sara is knowledgeable and takes time to explain everything clearly. The best cardiologist I have visited."
+      },
+      {
+        "id": 4,
+        "name": "Layla H.",
+        "rating": 5,
+        "date": "December 2024",
+        "text": "Very professional and caring. The clinic is clean and staff is friendly. Will definitely come back."
+      },
+      {
+        "id": 5,
+        "name": "Karim N.",
+        "rating": 4,
+        "date": "November 2024",
+        "text": "Good doctor with solid expertise. Waiting time was a bit long but the quality of consultation was excellent."
+      }
+    ],
+    "demoAbout": "Board-certified cardiologist at Ain Shams Hospital. Specializes in preventive cardiology and echocardiography with over 12 years of experience. Fluent in Arabic and English.",
+    "demoLocation": "Abbassia, Cairo · ~4.2 km away"
+  },
+  "calendar": {
+    "month": "Month",
+    "day": "Day",
+    "morning": "Morning",
+    "afternoonEvening": "Afternoon & Evening",
+    "prev": "Previous",
+    "next": "Next",
+    "morningTimes": ["09:00 AM", "09:30 AM", "10:00 AM", "10:30 AM", "11:00 AM", "11:30 AM"],
+    "afternoonTimes": ["02:00 PM", "03:00 PM", "04:00 PM", "04:30 PM", "05:00 PM", "06:00 PM", "08:00 PM", "10:00 PM"]
+  },
+  "auth": {
+    "login": "Login",
+    "signup": "Sign up",
+    "email": "Email",
+    "emailAddress": "Email address",
+    "password": "Password",
+    "forgotPassword": "Forgot password?",
+    "noAccount": "Don't have an account?",
+    "haveAccount": "Already have an account?",
+    "welcomeBack": "Welcome back.",
+    "welcomeSubtitle": "Book appointments with top doctors in minutes.",
+    "feature1": "Verified doctors across 20+ specialties",
+    "feature2": "Instant booking, no waiting",
+    "feature3": "Reminders & follow-ups built in",
+    "signInTitle": "Sign in to your account",
+    "joinTitle": "Join 3elagi today.",
+    "joinSubtitle": "Connect with patients or find the right doctor.",
+    "placeholderEmail": "you{'@'}example.com",
+    "placeholderPassword": "••••••••",
+    "iam": "I am a…",
+    "patient": "Patient",
+    "doctorRole": "Doctor",
+    "fullName": "Full Name",
+    "phone": "Phone",
+    "placeholderPhone": "+20 1XX XXX XXXX",
+    "placeholderName": "Your full name",
+    "doctorVerifyNote": "Doctor verification fields",
+    "licensePlaceholder": "Medical license #",
+    "specializationPlaceholder": "Specialization",
+    "createAccount": "Create Account",
+    "createAccountTitle": "Create your account"
+  },
+  "waitingRoom": {
+    "nowServing": "NOW SERVING",
+    "proceedMessage": "Please proceed to the doctor's office",
+    "upNext": "UP NEXT",
+    "queue": "QUEUE",
+    "listenMessage": "Please listen for your number to be called"
+  },
+  "filter": {
+    "all": "All",
+    "cardiology": "Cardiology",
+    "pediatrics": "Pediatrics",
+    "orthopedics": "Orthopedics",
+    "dermatology": "Dermatology",
+    "ent": "ENT",
+    "ophthalmology": "Ophthalmology",
+    "neurology": "Neurology"
+  },
+  "demo": {
+    "specialty": {
+      "cardiologist": "Cardiologist",
+      "pediatrician": "Pediatrician",
+      "dermatologist": "Dermatologist",
+      "orthopedic": "Orthopedic Surgeon"
+    },
+    "clinic": {
+      "ainShams": "Ain Shams Hospital",
+      "maadiChildren": "Maadi Children Clinic",
+      "cairoSkin": "Cairo Skin Center",
+      "cleopatra": "Cleopatra Hospital"
+    },
+    "procedure": {
+      "echo": "Echocardiography",
+      "stress": "Stress Test",
+      "angio": "Angioplasty",
+      "holter": "Holter Monitor",
+      "vax": "Vaccination",
+      "growth": "Growth Assessment",
+      "newborn": "Newborn Screening",
+      "laser": "Laser Therapy",
+      "peel": "Chemical Peel",
+      "acne": "Acne Treatment",
+      "mole": "Mole Removal",
+      "joint": "Joint Replacement",
+      "arth": "Arthroscopy",
+      "fracture": "Fracture Repair",
+      "sports": "Sports Injury"
+    },
+    "about": {
+      "1": "Board-certified cardiologist at Ain Shams Hospital. Specializes in preventive cardiology and echocardiography. Fluent in Arabic and English.",
+      "2": "Experienced pediatrician focused on preventive care and childhood development.",
+      "3": "Dermatology specialist offering medical and cosmetic treatments.",
+      "4": "Orthopedic surgeon with expertise in joint and sports injuries."
+    }
+  },
+  "onboarding": {
+    "stepOf": "Step {current} of {total}",
+    "reviewStep": "Review — Step 7 of 7",
+    "reviewBadge": "Review",
+    "reviewSidebar": "Review",
+    "reviewSidebarSub": "Final check",
+    "welcomeTitle": "Welcome, Sara 👋",
+    "welcomeSubtitle": "Let's set up your health profile so we can match you with the right doctors.",
+    "checklistTitle": "What we'll cover:",
+    "checklist1": "Basic personal information",
+    "checklist2": "Medical history & conditions",
+    "checklist3": "Current medications & allergies",
+    "checklist4": "Insurance & documents",
+    "timeHint": "Takes about 3 minutes",
+    "getStarted": "Get Started →",
+    "securityTitle": "🔒 Your data is secure",
+    "securityText": "We never share your health information with third parties.",
+    "steps": {
+      "basic": { "label": "Basic Info", "sub": "Name, DOB & gender" },
+      "history": { "label": "Medical History", "sub": "Existing conditions" },
+      "meds": { "label": "Medications", "sub": "Current prescriptions" },
+      "allergies": { "label": "Allergies", "sub": "Known reactions" },
+      "insurance": { "label": "Insurance", "sub": "Coverage details" },
+      "documents": { "label": "Documents", "sub": "Upload files" }
+    },
+    "basicHeading": "Basic Information",
+    "basicSub": "Tell us a little about yourself",
+    "fullName": "Full Name",
+    "dob": "Date of Birth",
+    "dobPlaceholder": "DD / MM / YYYY",
+    "namePlaceholder": "e.g. Sara Ahmed",
+    "gender": "Gender",
+    "historyHeading": "Medical History",
+    "historySub": "Select all that apply",
+    "medsHeading": "Medications",
+    "medsSub": "Current prescriptions or supplements",
+    "medsQuestion": "Are you currently taking any medications?",
+    "medsListLabel": "List your medications",
+    "medsListPlaceholder": "e.g. Metformin 500mg, Aspirin 100mg…",
+    "allergiesHeading": "Allergies",
+    "insuranceHeading": "Insurance",
+    "insuranceSub": "Help us verify your coverage",
+    "insuranceQuestion": "Do you have health insurance?",
+    "insurancePick": "Select your insurance provider",
+    "documentsHeading": "Medical Documents",
+    "documentsSub": "Upload previous reports or prescriptions",
+    "documentsHint": "Examples: lab results, X-rays, prescriptions, referral letters",
+    "uploadClick": "Click to upload files",
+    "uploadTap": "Tap to upload files",
+    "uploadTypes": "PDF, JPG, PNG · Max 10MB each",
+    "documentsOptional": "This step is optional — you can skip it",
+    "reviewHeading": "Review Your Profile",
+    "reviewSub": "Everything look right?",
+    "reviewBasic": "Basic Info",
+    "reviewHistory": "Medical History",
+    "reviewInsurance": "Insurance",
+    "reviewDocuments": "Documents",
+    "rowName": "Name",
+    "rowDob": "Date of Birth",
+    "rowGender": "Gender",
+    "rowConditions": "Conditions",
+    "rowMedications": "Medications",
+    "rowAllergies": "Allergies",
+    "rowHasInsurance": "Has Insurance",
+    "rowProvider": "Provider",
+    "rowUploaded": "Uploaded",
+    "medsNone": "None",
+    "medsNotSpecified": "Not specified",
+    "filesCount": "{n} file(s)",
+    "filesNone": "None",
+    "doneTitle": "You're all set!",
+    "doneDesc": "Your health profile is complete. You can now browse and book doctors.",
+    "doneNext": "What's next?",
+    "doneNextBody": "Browse verified doctors, book appointments, and manage your health — all in one place.",
+    "findDoctor": "Find a Doctor →",
+    "submitProfile": "Submit Profile ✓",
+    "reviewNav": "Review →",
+    "nextNav": "Next →",
+    "continueNav": "Continue →",
+    "footerBack": "← Back",
+    "genderKeys": {
+      "male": "Male",
+      "female": "Female",
+      "other": "Other",
+      "prefer_not": "Prefer not to say"
+    },
+    "conditions": {
+      "diabetes": "Diabetes",
+      "hypertension": "Hypertension",
+      "heart": "Heart Disease",
+      "asthma": "Asthma",
+      "kidney": "Kidney Disease",
+      "thyroid": "Thyroid Disorder",
+      "none": "None of the above"
+    },
+    "allergies": {
+      "penicillin": "Penicillin",
+      "aspirin": "Aspirin",
+      "sulfa": "Sulfa Drugs",
+      "latex": "Latex",
+      "food": "Food Allergies",
+      "none": "No Known Allergies"
+    },
+    "insuranceProviders": {
+      "allianz": "Allianz Egypt",
+      "metlife": "MetLife",
+      "axa": "AXA Egypt",
+      "bupa": "Bupa",
+      "globemed": "GlobeMed",
+      "other": "Other"
+    },
+    "errors": {
+      "name": "Please enter your full name.",
+      "dob": "Please enter your date of birth.",
+      "gender": "Please select your gender.",
+      "conditions": "Please select at least one option.",
+      "meds": "Please answer this question.",
+      "allergies": "Please select at least one option.",
+      "insurance": "Please answer this question.",
+      "provider": "Please select your insurance provider."
+    }
+  },
+  "intake": {
+    "steps": { "reason": "Reason", "duration": "Duration", "pain": "Pain", "symptoms": "Symptoms", "documents": "Documents" },
+    "stepProgress": "Step {n} of {total}",
+    "complete": "Complete",
+    "doneTitle": "Intake Complete",
+    "doneSub": "Your pre-visit information has been submitted. The doctor will review it before seeing you.",
+    "doneSubDesk": "Your pre-visit information has been submitted.",
+    "backToQueue": "Back to Queue",
+    "backQueueLink": "Back to Queue",
+    "reasonTitle": "Reason for Visit",
+    "reasonSub": "Why are you seeing the doctor today?",
+    "durationTitle": "Symptom Duration",
+    "durationSub": "How long have you been experiencing these symptoms?",
+    "painTitle": "Pain Level",
+    "painSub": "On a scale of 1–10, how severe is your discomfort?",
+    "painMin": "1 = No pain",
+    "painMax": "10 = Worst pain",
+    "symptomsTitle": "Current Symptoms",
+    "symptomsSub": "Select all that apply.",
+    "docsTitle": "Relevant Documents",
+    "docsSub": "Upload any recent test results or prescriptions (optional).",
+    "uploadTap": "Tap to upload files",
+    "uploadClick": "Click to upload files",
+    "uploadHint": "PDF, images up to 10MB",
+    "reasons": {
+      "new": "New complaint",
+      "followup": "Follow-up visit",
+      "routine": "Routine checkup",
+      "tests": "Test results review",
+      "rx": "Prescription renewal",
+      "other": "Other"
+    },
+    "durations": {
+      "lt1d": "Less than a day",
+      "d1_3": "1–3 days",
+      "d4_7": "4–7 days",
+      "w1_2": "1–2 weeks",
+      "w2p": "More than 2 weeks"
+    },
+    "symptoms": {
+      "chest": "Chest pain",
+      "sob": "Shortness of breath",
+      "dizzy": "Dizziness",
+      "fatigue": "Fatigue",
+      "palp": "Palpitations",
+      "swell": "Swelling",
+      "nausea": "Nausea",
+      "fever": "Fever"
+    },
+    "errors": {
+      "reason": "Please select a reason",
+      "duration": "Please select duration",
+      "pain": "Please select pain level",
+      "symptoms": "Select at least one symptom"
+    }
+  },
+  "patientQueue": {
+    "title": "My Queue Status",
+    "yourNumber": "Your number",
+    "ahead": "Ahead of you",
+    "wait": "Est. wait",
+    "total": "Total queue",
+    "progress": "Queue Progress",
+    "intakeCta": "Complete Pre-visit Intake →",
+    "states": {
+      "waiting": {
+        "title": "You're in the queue",
+        "subtitle": "Please stay nearby. We'll notify you when it's almost your turn."
+      },
+      "soon": {
+        "title": "Almost your turn!",
+        "subtitle": "Please make your way to the clinic now."
+      },
+      "yourTurn": {
+        "title": "It's your turn!",
+        "subtitle": "Please head to the doctor's office immediately."
+      }
+    },
+    "waitMin0": "0 min",
+    "waitMin5": "~5 min",
+    "waitMinEst": "~{n} min"
+  },
+  "doctorNav": {
+    "profile": "My Profile",
+    "appointments": "Appointments",
+    "queue": "Queue",
+    "analytics": "Analytics",
+    "settings": "Settings"
+  },
+  "doctorQueue": {
+    "title": "Queue Management",
+    "today": "Today — {date}",
+    "openWaiting": "Open Waiting Room Display",
+    "nowServing": "Now Serving",
+    "scheduled": "Scheduled: {time}",
+    "callNext": "Call Next Patient",
+    "listTitle": "Queue ({n})",
+    "statTotal": "Total",
+    "statWaiting": "Waiting",
+    "statDone": "Completed",
+    "statSkipped": "Skipped",
+    "status": {
+      "current": "Current",
+      "waiting": "Waiting",
+      "skipped": "Skipped",
+      "completed": "Completed"
+    }
+  },
+  "doctorProfile": {
+    "title": "My Profile",
+    "subtitle": "Manage your professional information",
+    "save": "Save Changes",
+    "changePhoto": "Change Photo",
+    "personal": "Personal Information",
+    "clinic": "Clinic Information",
+    "clinicName": "Clinic Name",
+    "location": "Location",
+    "fee": "Consultation Fee (EGP)",
+    "expYears": "Experience (years)",
+    "languages": "Languages",
+    "add": "+ Add",
+    "specializations": "Specializations",
+    "addSpecialty": "+ Add Specialty",
+    "documents": "Document Status",
+    "docLicense": "Medical License",
+    "docNational": "National ID",
+    "docCert": "Specialty Certificate",
+    "statusApproved": "Approved",
+    "statusReview": "Under Review",
+    "statusRejected": "Rejected"
+  },
+  "doctorOnboarding": {
+    "stepProgress": "Step 4 of 5",
+    "title": "Document Verification",
+    "subtitle": "Upload the required documents to verify your credentials.",
+    "warning": "One or more documents were rejected. Please re-upload the highlighted documents.",
+    "back": "Back",
+    "continue": "Continue",
+    "steps": {
+      "account": "Account Setup",
+      "personal": "Personal Info",
+      "clinic": "Clinic Details",
+      "documents": "Documents",
+      "review": "Review"
+    },
+    "secureBadge": "Your data is encrypted and secure",
+    "docs": {
+      "license": "Medical License",
+      "licenseSub": "PDF or image, max 5MB",
+      "national": "National ID",
+      "nationalSub": "Front and back",
+      "cert": "Specialty Certificate",
+      "certSub": "Board certification",
+      "photo": "Professional Photo",
+      "photoSub": "Clear headshot"
+    }
+  },
+  "upload": {
+    "pending": "Not uploaded",
+    "uploaded": "Uploaded",
+    "review": "Under review",
+    "approved": "Approved",
+    "rejected": "Rejected",
+    "rejectReason": "Reason: Document is unclear, please re-upload.",
+    "reupload": "Re-upload document",
+    "uploadDoc": "Upload document"
+  },
+  "doctorCard": {
+    "perVisit": "per visit",
+    "bookNow": "Book Now",
+    "bookAppointment": "Book Appointment"
+  }
+}

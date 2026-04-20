@@ -1,0 +1,564 @@
+{
+  "common": {
+    "yes": "نعم",
+    "no": "لا",
+    "back": "رجوع",
+    "next": "التالي",
+    "continue": "متابعة",
+    "submit": "إرسال",
+    "edit": "تعديل",
+    "optional": "اختياري",
+    "dash": "—",
+    "switchToArabic": "التبديل إلى العربية",
+    "switchToEnglish": "التبديل إلى الإنجليزية",
+    "chooseLanguage": "اختر اللغة",
+    "langArabic": "العربية",
+    "langEnglish": "الإنجليزية",
+    "brandName": "٣علاجي"
+  },
+  "meta": {
+    "home": "٣علاجي — ابحث عن أطباء",
+    "login": "تسجيل الدخول — ٣علاجي",
+    "signup": "إنشاء حساب — ٣علاجي",
+    "onboarding": "إعداد ملفك الصحي — ٣علاجي",
+    "intake": "استمارة ما قبل الزيارة — ٣علاجي",
+    "queue": "حالة قائمة الانتظار — ٣علاجي",
+    "doctorProfile": "ملفي المهني — ٣علاجي",
+    "doctorQueue": "إدارة قائمة الانتظار — ٣علاجي",
+    "waitingRoom": "غرفة الانتظار — ٣علاجي",
+    "doctorOnboarding": "توثيق الطبيب — ٣علاجي"
+  },
+  "nav": {
+    "findDoctors": "ابحث عن طبيب",
+    "specialties": "التخصصات",
+    "howItWorks": "كيف يعمل",
+    "login": "تسجيل الدخول",
+    "signup": "إنشاء حساب"
+  },
+  "home": {
+    "searchMobile": "ابحث عن طبيب أو تخصص…",
+    "searchDesktop": "ابحث عن أطباء أو تخصصات أو عيادات…",
+    "searchBtn": "بحث",
+    "showing": "عرض",
+    "doctors": "طبيب",
+    "inCairo": "في القاهرة",
+    "doctorsFound": "طبيب متاح",
+    "sortFilter": "ترتيب وتصفية",
+    "relevance": "الأكثر صلة",
+    "rating": "التقييم",
+    "priceLow": "السعر: الأقل",
+    "specialty": "التخصص",
+    "allSpecialties": "جميع التخصصات",
+    "availability": "التوافر",
+    "anyTime": "أي وقت",
+    "today": "اليوم",
+    "tomorrow": "غداً",
+    "thisWeek": "هذا الأسبوع",
+    "consultationType": "نوع الاستشارة",
+    "telemedicine": "استشارة عن بُعد",
+    "followUpVisits": "زيارات المتابعة",
+    "ratingLabel": "التقييم",
+    "fiveStars": "٥ نجوم",
+    "fourPlus": "٤ نجوم فأكثر",
+    "threePlus": "٣ نجوم فأكثر",
+    "ophthalmology": "طب العيون",
+    "neurology": "المخ والأعصاب"
+  },
+  "doctor": {
+    "availableToday": "متاح اليوم",
+    "tomorrow": "غداً",
+    "perVisit": "للزيارة",
+    "experience": "الخبرة",
+    "patients": "المرضى",
+    "telemedicine": "عن بُعد",
+    "followUp": "متابعة",
+    "selectAppointment": "اختر موعداً",
+    "selected": "المختار",
+    "reserve": "احجز",
+    "expYearsShort": "{n} سنة خبرة",
+    "reviewsCount": "{n} مراجعة"
+  },
+  "langs": {
+    "arabic": "العربية",
+    "english": "الإنجليزية"
+  },
+  "details": {
+    "pageTitle": "ملف الطبيب",
+    "doctorDetails": "بيانات الطبيب",
+    "experience": "الخبرة",
+    "patients": "المرضى",
+    "rating": "التقييم",
+    "availableToday": "متاح اليوم",
+    "telemedicine": "استشارة عن بُعد",
+    "followUp": "متابعة",
+    "consultationFee": "رسوم الكشف",
+    "directions": "الاتجاهات",
+    "getDirections": "احصل على الاتجاهات",
+    "selectAppointment": "اختر موعداً",
+    "reserveAppointment": "احجز موعداً",
+    "reviews": "آراء المرضى",
+    "seeAll": "عرض الكل (١٢٨)",
+    "seeAllArrow": "١٢٨ مراجعة ←",
+    "faq": "الأسئلة الشائعة",
+    "selected": "المختار",
+    "confirmReservation": "تأكيد الحجز",
+    "bookAppointment": "احجز موعداً",
+    "expSuffix": "خبرة",
+    "selectedSlotPlaceholder": "—",
+    "faqs": [
+      {
+        "q": "هل تقبل الدكتورة سارة مرضى جدد؟",
+        "a": "نعم، الدكتورة سارة تقبل مرضى جدد حالياً. يمكنك حجز أول موعد عبر المنصة مباشرة."
+      },
+      {
+        "q": "ما خطط التأمين المقبولة؟",
+        "a": "تقبل الدكتورة سارة معظم خطط التأمين الكبرى بما فيها Allianz وAXA وMetLife وتأمين بنك القاهرة عمان الصحي. يُرجى التأكد مع العيادة قبل الزيارة."
+      },
+      {
+        "q": "هل الاستشارة عن بُعد متاحة للزيارة الأولى؟",
+        "a": "الاستشارة عن بُعد متاحة لمتابعة الحالات التي لا تتطلب فحصاً سريرياً. الزيارة الأولى لحالات جديدة تتطلب عادة حضوراً في العيادة."
+      },
+      {
+        "q": "كم تستغرق المواعيد عادة؟",
+        "a": "الكشف المعتاد حوالي ٢٠–٣٠ دقيقة. التقييمات القلبية الشاملة قد تستغرق حتى ٦٠ دقيقة."
+      },
+      {
+        "q": "هل يمكن الحصول على روشتة عبر الإنترنت؟",
+        "a": "نعم، للمرضى المتابعين يمكن للدكتورة سارة تجديد الروشتة عبر منصة الاستشارة عن بُعد."
+      },
+      {
+        "q": "ما اللغات التي يتحدث بها الطبيب؟",
+        "a": "الدكتورة سارة تتحدث العربية والإنجليزية بطلاقة وتجري الاستشارات بأي منهما حسب تفضيل المريض."
+      }
+    ],
+    "reviewSamples": [
+      {
+        "id": 1,
+        "name": "أحمد م.",
+        "rating": 5,
+        "date": "مارس ٢٠٢٥",
+        "text": "طبيبة ممتازة، دقيقة ومهنية. شرحت حالتي بالتفصيل. أنصح بها بشدة."
+      },
+      {
+        "id": 2,
+        "name": "سارة ك.",
+        "rating": 4,
+        "date": "فبراير ٢٠٢٥",
+        "text": "تجربة رائعة بشكل عام. وقت انتظار قليل وشرح واضح لخطة العلاج."
+      },
+      {
+        "id": 3,
+        "name": "عمر ف.",
+        "rating": 5,
+        "date": "يناير ٢٠٢٥",
+        "text": "الدكتورة سارة على دراية واسعة وتأخذ وقتاً لشرح كل شيء. أفضل أخصائي قلب زرته."
+      },
+      {
+        "id": 4,
+        "name": "ليلى ح.",
+        "rating": 5,
+        "date": "ديسمبر ٢٠٢٤",
+        "text": "مهنية ومهتمة. العيادة نظيفة والطاقم ودود. سأعود بالتأكيد."
+      },
+      {
+        "id": 5,
+        "name": "كريم ن.",
+        "rating": 4,
+        "date": "نوفمبر ٢٠٢٤",
+        "text": "طبيب جيد بخبرة قوية. وقت الانتظار كان طويلاً قليلاً لكن جودة الكشف ممتازة."
+      }
+    ],
+    "demoAbout": "أخصائية قلب معتمدة في مستشفى عين شمس. متخصصة في أمراض القلب الوقائية والموجات الصوتية للقلب مع أكثر من ١٢ عاماً من الخبرة. تتحدث العربية والإنجليزية بطلاقة.",
+    "demoLocation": "العباسية، القاهرة · على بُعد ~٤٫٢ كم"
+  },
+  "calendar": {
+    "month": "الشهر",
+    "day": "اليوم",
+    "morning": "الصباح",
+    "afternoonEvening": "بعد الظهر والمساء",
+    "prev": "السابق",
+    "next": "التالي",
+    "morningTimes": ["٩:٠٠ ص", "٩:٣٠ ص", "١٠:٠٠ ص", "١٠:٣٠ ص", "١١:٠٠ ص", "١١:٣٠ ص"],
+    "afternoonTimes": ["٢:٠٠ م", "٣:٠٠ م", "٤:٠٠ م", "٤:٣٠ م", "٥:٠٠ م", "٦:٠٠ م", "٨:٠٠ م", "١٠:٠٠ م"]
+  },
+  "auth": {
+    "login": "تسجيل الدخول",
+    "signup": "إنشاء حساب",
+    "email": "البريد الإلكتروني",
+    "emailAddress": "عنوان البريد الإلكتروني",
+    "password": "كلمة المرور",
+    "forgotPassword": "نسيت كلمة المرور؟",
+    "noAccount": "ليس لديك حساب؟",
+    "haveAccount": "لديك حساب بالفعل؟",
+    "welcomeBack": "مرحباً بعودتك.",
+    "welcomeSubtitle": "احجز مواعيد مع أفضل الأطباء في دقائق.",
+    "feature1": "أطباء موثوقون في أكثر من ٢٠ تخصصاً",
+    "feature2": "حجز فوري بلا انتظار",
+    "feature3": "تذكير ومتابعات مدمجة",
+    "signInTitle": "سجّل الدخول إلى حسابك",
+    "joinTitle": "انضم إلى ٣علاجي اليوم.",
+    "joinSubtitle": "تواصل مع المرضى أو اعثر على الطبيب المناسب.",
+    "placeholderEmail": "you{'@'}example.com",
+    "placeholderPassword": "••••••••",
+    "iam": "أنا…",
+    "patient": "مريض",
+    "doctorRole": "طبيب",
+    "fullName": "الاسم الكامل",
+    "phone": "الهاتف",
+    "placeholderPhone": "+20 1XX XXX XXXX",
+    "placeholderName": "اسمك الكامل",
+    "doctorVerifyNote": "حقول التحقق للطبيب",
+    "licensePlaceholder": "رقم ترخيص مزاولة المهنة",
+    "specializationPlaceholder": "التخصص",
+    "createAccount": "إنشاء حساب",
+    "createAccountTitle": "أنشئ حسابك"
+  },
+  "waitingRoom": {
+    "nowServing": "يُستقبل الآن",
+    "proceedMessage": "يُرجى التوجه إلى عيادة الطبيب",
+    "upNext": "التالي",
+    "queue": "قائمة الانتظار",
+    "listenMessage": "يُرجى الانتباه لمناداة رقمك"
+  },
+  "filter": {
+    "all": "الكل",
+    "cardiology": "أمراض القلب",
+    "pediatrics": "طب الأطفال",
+    "orthopedics": "العظام",
+    "dermatology": "الجلدية",
+    "ent": "أنف وأذن وحنجرة",
+    "ophthalmology": "طب العيون",
+    "neurology": "المخ والأعصاب"
+  },
+  "demo": {
+    "specialty": {
+      "cardiologist": "أخصائي قلب",
+      "pediatrician": "أخصائي أطفال",
+      "dermatologist": "أخصائي جلدية",
+      "orthopedic": "جراح عظام"
+    },
+    "clinic": {
+      "ainShams": "مستشفى عين شمس",
+      "maadiChildren": "عيادة أطفال المعادي",
+      "cairoSkin": "مركز القاهرة للجلدية",
+      "cleopatra": "مستشفى كليوباترا"
+    },
+    "procedure": {
+      "echo": "موجات صوتية للقلب",
+      "stress": "اختبار جهد",
+      "angio": "قسطرة علاجية",
+      "holter": "هولتر",
+      "vax": "تطعيم",
+      "growth": "تقييم النمو",
+      "newborn": "فحص حديثي الولادة",
+      "laser": "علاج بالليزر",
+      "peel": "تقشير كيميائي",
+      "acne": "علاج حب الشباب",
+      "mole": "إزالة شامة",
+      "joint": "استبدال مفصل",
+      "arth": "منظار مفصل",
+      "fracture": "علاج كسور",
+      "sports": "إصابات رياضية"
+    },
+    "about": {
+      "1": "أخصائية قلب معتمدة في مستشفى عين شمس. متخصصة في أمراض القلب الوقائية والموجات الصوتية للقلب. تتحدث العربية والإنجليزية.",
+      "2": "طبيبة أطفال ذات خبرة تركز على الوقاية ونمو الطفل.",
+      "3": "أخصائية جلدية تقدم علاجات طبية وتجميلية.",
+      "4": "جراح عظام خبير في إصابات المفاصل والرياضة."
+    }
+  },
+  "onboarding": {
+    "stepOf": "الخطوة {current} من {total}",
+    "reviewStep": "مراجعة — الخطوة ٧ من ٧",
+    "reviewBadge": "مراجعة",
+    "reviewSidebar": "مراجعة",
+    "reviewSidebarSub": "تحقق نهائي",
+    "welcomeTitle": "مرحباً، سارة 👋",
+    "welcomeSubtitle": "لنُعد ملفك الصحي لنوصلك بالأطباء المناسبين.",
+    "checklistTitle": "ما سنغطيه:",
+    "checklist1": "البيانات الشخصية الأساسية",
+    "checklist2": "التاريخ المرضي والحالات",
+    "checklist3": "الأدوية الحالية والحساسية",
+    "checklist4": "التأمين والمستندات",
+    "timeHint": "يستغرق حوالي ٣ دقائق",
+    "getStarted": "ابدأ ←",
+    "securityTitle": "🔒 بياناتك آمنة",
+    "securityText": "لا نشارك معلوماتك الصحية مع أطراف ثالثة.",
+    "steps": {
+      "basic": { "label": "البيانات الأساسية", "sub": "الاسم وتاريخ الميلاد والجنس" },
+      "history": { "label": "التاريخ المرضي", "sub": "الحالات الحالية" },
+      "meds": { "label": "الأدوية", "sub": "الوصفات الحالية" },
+      "allergies": { "label": "الحساسية", "sub": "ردود الفعل المعروفة" },
+      "insurance": { "label": "التأمين", "sub": "تفاصيل التغطية" },
+      "documents": { "label": "المستندات", "sub": "رفع الملفات" }
+    },
+    "basicHeading": "البيانات الأساسية",
+    "basicSub": "أخبرنا قليلاً عن نفسك",
+    "fullName": "الاسم الكامل",
+    "dob": "تاريخ الميلاد",
+    "dobPlaceholder": "يوم / شهر / سنة",
+    "namePlaceholder": "مثال: سارة أحمد",
+    "gender": "الجنس",
+    "historyHeading": "التاريخ المرضي",
+    "historySub": "اختر كل ما ينطبق",
+    "medsHeading": "الأدوية",
+    "medsSub": "الوصفات أو المكملات الحالية",
+    "medsQuestion": "هل تتناول أدوية حالياً؟",
+    "medsListLabel": "اذكر أدويتك",
+    "medsListPlaceholder": "مثال: ميتفورمين ٥٠٠ مجم، أسبرين ١٠٠ مجم…",
+    "allergiesHeading": "الحساسية",
+    "insuranceHeading": "التأمين",
+    "insuranceSub": "ساعدنا في التحقق من تغطيتك",
+    "insuranceQuestion": "هل لديك تأمين صحي؟",
+    "insurancePick": "اختر شركة التأمين",
+    "documentsHeading": "المستندات الطبية",
+    "documentsSub": "ارفع تقارير أو روشتات سابقة",
+    "documentsHint": "أمثلة: تحاليل، أشعة، روشتات، إحالات",
+    "uploadClick": "انقر لرفع الملفات",
+    "uploadTap": "اضغط لرفع الملفات",
+    "uploadTypes": "PDF، JPG، PNG · حتى ١٠ ميجابايت لكل ملف",
+    "documentsOptional": "هذه الخطوة اختيارية — يمكنك تخطيها",
+    "reviewHeading": "راجع ملفك",
+    "reviewSub": "هل كل شيء صحيح؟",
+    "reviewBasic": "البيانات الأساسية",
+    "reviewHistory": "التاريخ المرضي",
+    "reviewInsurance": "التأمين",
+    "reviewDocuments": "المستندات",
+    "rowName": "الاسم",
+    "rowDob": "تاريخ الميلاد",
+    "rowGender": "الجنس",
+    "rowConditions": "الحالات",
+    "rowMedications": "الأدوية",
+    "rowAllergies": "الحساسية",
+    "rowHasInsurance": "لديه تأمين",
+    "rowProvider": "الشركة",
+    "rowUploaded": "المرفوع",
+    "medsNone": "لا يوجد",
+    "medsNotSpecified": "غير محدد",
+    "filesCount": "{n} ملف(ات)",
+    "filesNone": "لا يوجد",
+    "doneTitle": "تم كل شيء!",
+    "doneDesc": "اكتمل ملفك الصحي. يمكنك الآن تصفح الأطباء وحجز المواعيد.",
+    "doneNext": "ماذا بعد؟",
+    "doneNextBody": "تصفح أطباء موثوقين، احجز مواعيد، وأدر صحتك — كل ذلك في مكان واحد.",
+    "findDoctor": "ابحث عن طبيب ←",
+    "submitProfile": "إرسال الملف ✓",
+    "reviewNav": "مراجعة ←",
+    "nextNav": "التالي ←",
+    "continueNav": "متابعة ←",
+    "footerBack": "رجوع ←",
+    "genderKeys": {
+      "male": "ذكر",
+      "female": "أنثى",
+      "other": "آخر",
+      "prefer_not": "أفضل عدم الإفصاح"
+    },
+    "conditions": {
+      "diabetes": "سكري",
+      "hypertension": "ضغط دم",
+      "heart": "أمراض القلب",
+      "asthma": "ربو",
+      "kidney": "أمراض الكلى",
+      "thyroid": "الغدة الدرقية",
+      "none": "لا شيء مما سبق"
+    },
+    "allergies": {
+      "penicillin": "بنسلين",
+      "aspirin": "أسبرين",
+      "sulfa": "سلفا",
+      "latex": "لاتكس",
+      "food": "حساسية غذائية",
+      "none": "لا توجد حساسية معروفة"
+    },
+    "insuranceProviders": {
+      "allianz": "Allianz Egypt",
+      "metlife": "MetLife",
+      "axa": "AXA Egypt",
+      "bupa": "Bupa",
+      "globemed": "GlobeMed",
+      "other": "أخرى"
+    },
+    "errors": {
+      "name": "يُرجى إدخال الاسم الكامل.",
+      "dob": "يُرجى إدخال تاريخ الميلاد.",
+      "gender": "يُرجى اختيار الجنس.",
+      "conditions": "يُرجى اختيار خيار واحد على الأقل.",
+      "meds": "يُرجى الإجابة عن هذا السؤال.",
+      "allergies": "يُرجى اختيار خيار واحد على الأقل.",
+      "insurance": "يُرجى الإجابة عن هذا السؤال.",
+      "provider": "يُرجى اختيار شركة التأمين."
+    }
+  },
+  "intake": {
+    "steps": { "reason": "السبب", "duration": "المدة", "pain": "الألم", "symptoms": "الأعراض", "documents": "المستندات" },
+    "stepProgress": "الخطوة {n} من {total}",
+    "complete": "اكتمل",
+    "doneTitle": "اكتملت الاستمارة",
+    "doneSub": "تم إرسال معلومات ما قبل الزيارة. سيراجعها الطبيب قبل استقبالك.",
+    "doneSubDesk": "تم إرسال معلومات ما قبل الزيارة.",
+    "backToQueue": "العودة لقائمة الانتظار",
+    "backQueueLink": "العودة لقائمة الانتظار",
+    "reasonTitle": "سبب الزيارة",
+    "reasonSub": "لماذا تزور الطبيب اليوم؟",
+    "durationTitle": "مدة الأعراض",
+    "durationSub": "منذ متى تعاني هذه الأعراض؟",
+    "painTitle": "مستوى الألم",
+    "painSub": "على مقياس من ١–١٠، ما شدة الانزعاج؟",
+    "painMin": "١ = لا ألم",
+    "painMax": "١٠ = أسوأ ألم",
+    "symptomsTitle": "الأعراض الحالية",
+    "symptomsSub": "اختر كل ما ينطبق.",
+    "docsTitle": "مستندات ذات صلة",
+    "docsSub": "ارفع نتائج فحوصات أو روشتات حديثة (اختياري).",
+    "uploadTap": "اضغط لرفع الملفات",
+    "uploadClick": "انقر لرفع الملفات",
+    "uploadHint": "PDF أو صور حتى ١٠ ميجابايت",
+    "reasons": {
+      "new": "شكوى جديدة",
+      "followup": "زيارة متابعة",
+      "routine": "فحص دوري",
+      "tests": "مراجعة نتائج تحاليل",
+      "rx": "تجديد روشتة",
+      "other": "أخرى"
+    },
+    "durations": {
+      "lt1d": "أقل من يوم",
+      "d1_3": "١–٣ أيام",
+      "d4_7": "٤–٧ أيام",
+      "w1_2": "١–٢ أسبوع",
+      "w2p": "أكثر من أسبوعين"
+    },
+    "symptoms": {
+      "chest": "ألم صدر",
+      "sob": "ضيق نفس",
+      "dizzy": "دوار",
+      "fatigue": "إرهاق",
+      "palp": "خفقان",
+      "swell": "وذمة",
+      "nausea": "غثيان",
+      "fever": "حمى"
+    },
+    "errors": {
+      "reason": "يُرجى اختيار السبب",
+      "duration": "يُرجى اختيار المدة",
+      "pain": "يُرجى اختيار مستوى الألم",
+      "symptoms": "اختر عرضاً واحداً على الأقل"
+    }
+  },
+  "patientQueue": {
+    "title": "حالة قائمة الانتظار",
+    "yourNumber": "رقمك",
+    "ahead": "قبلك",
+    "wait": "الانتظار التقريبي",
+    "total": "إجمالي القائمة",
+    "progress": "تقدم القائمة",
+    "intakeCta": "أكمل استمارة ما قبل الزيارة ←",
+    "states": {
+      "waiting": {
+        "title": "أنت في قائمة الانتظار",
+        "subtitle": "يُرجى البقاء قريباً. سنُعلمك عند اقتراب دورك."
+      },
+      "soon": {
+        "title": "اقترب دورك!",
+        "subtitle": "يُرجى التوجه إلى العيادة الآن."
+      },
+      "yourTurn": {
+        "title": "حان دورك!",
+        "subtitle": "يُرجى التوجه إلى عيادة الطبيب فوراً."
+      }
+    },
+    "waitMin0": "٠ د",
+    "waitMin5": "~٥ د",
+    "waitMinEst": "~{n} د"
+  },
+  "doctorNav": {
+    "profile": "ملفي",
+    "appointments": "المواعيد",
+    "queue": "قائمة الانتظار",
+    "analytics": "الإحصائيات",
+    "settings": "الإعدادات"
+  },
+  "doctorQueue": {
+    "title": "إدارة قائمة الانتظار",
+    "today": "اليوم — {date}",
+    "openWaiting": "فتح شاشة غرفة الانتظار",
+    "nowServing": "يُستقبل الآن",
+    "scheduled": "الموعد: {time}",
+    "callNext": "استدعاء المريض التالي",
+    "listTitle": "القائمة ({n})",
+    "statTotal": "الإجمالي",
+    "statWaiting": "منتظر",
+    "statDone": "مكتمل",
+    "statSkipped": "تم تخطيه",
+    "status": {
+      "current": "جاري",
+      "waiting": "منتظر",
+      "skipped": "متخطى",
+      "completed": "مكتمل"
+    }
+  },
+  "doctorProfile": {
+    "title": "ملفي المهني",
+    "subtitle": "إدارة معلوماتك المهنية",
+    "save": "حفظ التغييرات",
+    "changePhoto": "تغيير الصورة",
+    "personal": "البيانات الشخصية",
+    "clinic": "بيانات العيادة",
+    "clinicName": "اسم العيادة",
+    "location": "الموقع",
+    "fee": "رسوم الكشف (جنيه)",
+    "expYears": "سنوات الخبرة",
+    "languages": "اللغات",
+    "add": "+ إضافة",
+    "specializations": "التخصصات",
+    "addSpecialty": "+ إضافة تخصص",
+    "documents": "حالة المستندات",
+    "docLicense": "ترخيص مزاولة المهنة",
+    "docNational": "الرقم القومي",
+    "docCert": "شهادة التخصص",
+    "statusApproved": "مقبول",
+    "statusReview": "قيد المراجعة",
+    "statusRejected": "مرفوض"
+  },
+  "doctorOnboarding": {
+    "stepProgress": "الخطوة ٤ من ٥",
+    "title": "التحقق من المستندات",
+    "subtitle": "ارفع المستندات المطلوبة لتوثيق بياناتك.",
+    "warning": "تم رفض مستند أو أكثر. يُرجى إعادة رفع المستندات المحددة.",
+    "back": "رجوع",
+    "continue": "متابعة",
+    "steps": {
+      "account": "إعداد الحساب",
+      "personal": "البيانات الشخصية",
+      "clinic": "بيانات العيادة",
+      "documents": "المستندات",
+      "review": "مراجعة"
+    },
+    "secureBadge": "بياناتك مشفرة وآمنة",
+    "docs": {
+      "license": "ترخيص مزاولة المهنة",
+      "licenseSub": "PDF أو صورة، حتى ٥ ميجابايت",
+      "national": "الرقم القومي",
+      "nationalSub": "الوجه والظهر",
+      "cert": "شهادة التخصص",
+      "certSub": "البورد",
+      "photo": "صورة مهنية",
+      "photoSub": "صورة واضحة للوجه"
+    }
+  },
+  "upload": {
+    "pending": "غير مرفوع",
+    "uploaded": "تم الرفع",
+    "review": "قيد المراجعة",
+    "approved": "مقبول",
+    "rejected": "مرفوض",
+    "rejectReason": "السبب: المستند غير واضح، يُرجى إعادة الرفع.",
+    "reupload": "إعادة رفع المستند",
+    "uploadDoc": "رفع المستند"
+  },
+  "doctorCard": {
+    "perVisit": "للزيارة",
+    "bookNow": "احجز الآن",
+    "bookAppointment": "احجز موعداً"
+  }
+}
