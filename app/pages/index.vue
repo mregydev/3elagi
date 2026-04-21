@@ -13,11 +13,6 @@ const activeFilterKey = ref<(typeof filterChipKeys)[number]>('all')
 const sidebarSpecialtyKeys = ['cardiology', 'pediatrics', 'orthopedics', 'dermatology', 'ent', 'ophthalmology', 'neurology'] as const
 const selectedSpecialties = ref<string[]>([])
 
-function toggleSpecialty(s: string) {
-  const idx = selectedSpecialties.value.indexOf(s)
-  if (idx === -1) selectedSpecialties.value.push(s)
-  else selectedSpecialties.value.splice(idx, 1)
-}
 
 const activeAvailabilityIdx = ref(0)
 
@@ -39,7 +34,7 @@ const totalPages = 6
 async function goToPage(p: number) {
   if (p < 1 || p > totalPages) return
   currentPage.value = p
-  if (import.meta.client) window.scrollTo({ top: 0, behavior: 'smooth' })
+  mainScrollRef.value?.scrollTo({ top: 0, behavior: 'smooth' })
   await nextTick()
   const active = pgNumbersRef.value?.querySelector<HTMLElement>('.pg-btn.active')
   active?.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' })
@@ -150,6 +145,7 @@ const sortLabels = computed(() => [
 
 const chipsRef = ref<HTMLElement | null>(null)
 const pgNumbersRef = ref<HTMLElement | null>(null)
+const mainScrollRef = ref<HTMLElement | null>(null)
 
 function scrollChips(dir: number) {
   if (!chipsRef.value) return
@@ -198,25 +194,15 @@ function scrollChips(dir: number) {
       <!-- Sidebar (desktop only) -->
       <aside class="sidebar">
 
-        <!-- Specialty — checkboxes -->
+        <!-- Specialty — multiselect combobox -->
         <div class="sidebar-section">
           <span class="section-label">{{ t('home.specialty') }}</span>
-          <label
-            v-for="s in sidebarSpecialtyKeys"
-            :key="s"
-            class="sidebar-check"
-          >
-            <span
-              class="checkbox"
-              :class="{ checked: selectedSpecialties.includes(s) }"
-              @click="toggleSpecialty(s)"
-            >
-              <svg v-if="selectedSpecialties.includes(s)" width="10" height="10" viewBox="0 0 12 12" fill="none">
-                <path d="M2 6l3 3 5-5" stroke="white" stroke-width="1.8" stroke-linecap="round" />
-              </svg>
-            </span>
-            <span class="sidebar-item-text">{{ t(`filter.${s}`) }}</span>
-          </label>
+          <MultiCombobox
+            v-model="selectedSpecialties"
+            :options="sidebarSpecialtyKeys.map(k => ({ value: k, label: t(`filter.${k}`) }))"
+            :placeholder="t('home.specialty')"
+            :search-placeholder="t('home.searchMobile')"
+          />
         </div>
 
         <div class="sidebar-divider" />
@@ -295,58 +281,60 @@ function scrollChips(dir: number) {
 
       </aside>
 
-      <!-- Main results -->
+      <!-- Main results: header fixed, list + pagination scroll -->
       <div class="main">
-
-        <!-- Desktop search bar -->
-        <div class="desktop-search-bar">
-          <div class="search-input desktop">
-            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#94A3B8" stroke-width="2.5">
-              <circle cx="11" cy="11" r="8" /><path d="m21 21-4.35-4.35" />
-            </svg>
-            <input v-model="searchQuery" :placeholder="t('home.searchDesktop')" />
-          </div>
-          <button class="search-btn">{{ t('home.searchBtn') }}</button>
-        </div>
-
-        <!-- Results header -->
-        <div class="results-header">
-          <span class="results-count">
-            <span class="mobile-count">24 {{ t('home.doctorsFound') }}</span>
-            <span class="desktop-count">{{ t('home.showing') }} <strong>24 {{ t('home.doctors') }}</strong> {{ t('home.inCairo') }}</span>
-          </span>
-          <div class="sort-row">
-            <button class="sort-filter-btn mobile-only">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="2.5">
-                <line x1="4" y1="6" x2="11" y2="6" />
-                <line x1="4" y1="12" x2="20" y2="12" />
-                <line x1="13" y1="18" x2="20" y2="18" />
+        <div class="main-header">
+          <!-- Desktop search bar -->
+          <div class="desktop-search-bar">
+            <div class="search-input desktop">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#94A3B8" stroke-width="2.5">
+                <circle cx="11" cy="11" r="8" /><path d="m21 21-4.35-4.35" />
               </svg>
-              {{ t('home.sortFilter') }}
-            </button>
-            <div class="sort-tabs desktop-only">
-              <button
-                v-for="(s, i) in sortLabels"
-                :key="s"
-                class="sort-tab"
-                :class="{ active: activeSortIdx === i }"
-                @click="activeSortIdx = i"
-              >{{ s }}</button>
+              <input v-model="searchQuery" :placeholder="t('home.searchDesktop')" />
+            </div>
+            <button class="search-btn">{{ t('home.searchBtn') }}</button>
+          </div>
+
+          <!-- Results header -->
+          <div class="results-header">
+            <span class="results-count">
+              <span class="mobile-count">24 {{ t('home.doctorsFound') }}</span>
+              <span class="desktop-count">{{ t('home.showing') }} <strong>24 {{ t('home.doctors') }}</strong> {{ t('home.inCairo') }}</span>
+            </span>
+            <div class="sort-row">
+              <button class="sort-filter-btn mobile-only">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="2.5">
+                  <line x1="4" y1="6" x2="11" y2="6" />
+                  <line x1="4" y1="12" x2="20" y2="12" />
+                  <line x1="13" y1="18" x2="20" y2="18" />
+                </svg>
+                {{ t('home.sortFilter') }}
+              </button>
+              <div class="sort-tabs desktop-only">
+                <button
+                  v-for="(s, i) in sortLabels"
+                  :key="s"
+                  class="sort-tab"
+                  :class="{ active: activeSortIdx === i }"
+                  @click="activeSortIdx = i"
+                >{{ s }}</button>
+              </div>
             </div>
           </div>
         </div>
 
-        <!-- Cards -->
-        <div class="results-list">
-          <DoctorListRow
-            v-for="doc in doctors"
-            :key="doc.id"
-            :doctor="doc"
-          />
-        </div>
+        <div ref="mainScrollRef" class="main-scroll">
+          <!-- Cards -->
+          <div class="results-list">
+            <DoctorListRow
+              v-for="doc in doctors"
+              :key="doc.id"
+              :doctor="doc"
+            />
+          </div>
 
-        <!-- Pagination -->
-        <div class="pagination">
+          <!-- Pagination -->
+          <div class="pagination">
           <!-- Prev — always points left ← -->
           <button
             class="pg-arrow"
@@ -381,7 +369,7 @@ function scrollChips(dir: number) {
             </svg>
           </button>
         </div>
-
+        </div>
       </div>
     </div>
   </div>
@@ -389,7 +377,8 @@ function scrollChips(dir: number) {
 
 <style scoped>
 .page {
-  min-height: 100vh;
+  height: 100vh;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   background: var(--gray-0);
@@ -468,6 +457,7 @@ function scrollChips(dir: number) {
 /* ── Content area ────────────────────────────────── */
 .content-area {
   flex: 1;
+  min-height: 0;
   display: flex;
   overflow: hidden;
 }
@@ -547,7 +537,21 @@ function scrollChips(dir: number) {
   flex: 1;
   display: flex;
   flex-direction: column;
+  min-height: 0;
+}
+
+.main-header {
+  flex-shrink: 0;
+  position: relative;
+  z-index: 4;
+  background: var(--gray-0);
+}
+
+.main-scroll {
+  flex: 1;
+  min-height: 0;
   overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
 }
 
 .desktop-search-bar { display: none; }
@@ -596,8 +600,13 @@ function scrollChips(dir: number) {
     background: var(--white);
     border-inline-end: 1px solid var(--gray-1);
     padding: 28px 22px;
-    overflow-y: auto;
+    overflow: hidden;
     flex-shrink: 0;
+  }
+
+  .main-header {
+    background: var(--white);
+    box-shadow: 0 1px 0 var(--gray-1);
   }
 
   .desktop-search-bar {

@@ -66,6 +66,10 @@
   --sidebar-accent-foreground: oklch(0.205 0 0);
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
+  /* Scrollbars — match primary blue */
+  --scrollbar-thumb: var(--blue-m);
+  --scrollbar-thumb-hover: var(--blue);
+  --scrollbar-track: var(--gray-1);
 }
 
 html, body {
@@ -96,6 +100,31 @@ html[dir="rtl"] textarea {
 /* Flip directional icons (chevrons, arrows) when marked in templates */
 html[dir="rtl"] .cn-rtl-flip {
   transform: scaleX(-1);
+}
+
+/* Scrollbars — blue thumb (Firefox + WebKit) */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--scrollbar-thumb) var(--scrollbar-track);
+}
+
+*::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+*::-webkit-scrollbar-track {
+  background: var(--scrollbar-track);
+  border-radius: 100px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: var(--scrollbar-thumb);
+  border-radius: 100px;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background: var(--scrollbar-thumb-hover);
 }
 
 a {
@@ -184,6 +213,7 @@ input, textarea {
   --sidebar-accent-foreground: oklch(0.985 0 0);
   --sidebar-border: oklch(1 0 0 / 10%);
   --sidebar-ring: oklch(0.556 0 0);
+  --scrollbar-track: oklch(0.28 0 0);
 }
 
 @layer base {
