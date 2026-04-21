@@ -31,13 +31,23 @@ const activeSortIdx = ref(0)
 const currentPage = ref(1)
 const totalPages = 6
 
+function scrollPaginationActiveIntoView() {
+  const container = pgNumbersRef.value
+  const active = container?.querySelector<HTMLElement>('.pg-btn.active')
+  if (!container || !active) return
+  const left = active.offsetLeft - container.clientWidth / 2 + active.offsetWidth / 2
+  container.scrollTo({ left: Math.max(0, left), behavior: 'smooth' })
+}
+
 async function goToPage(p: number) {
   if (p < 1 || p > totalPages) return
   currentPage.value = p
-  mainScrollRef.value?.scrollTo({ top: 0, behavior: 'smooth' })
   await nextTick()
-  const active = pgNumbersRef.value?.querySelector<HTMLElement>('.pg-btn.active')
-  active?.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' })
+  // Top of doctor list (do not use scrollIntoView on pagination — it scrolls the main column back down)
+  if (import.meta.client) {
+    resultsListRef.value?.scrollIntoView({ behavior: 'smooth', block: 'start' })
+  }
+  scrollPaginationActiveIntoView()
 }
 
 const pageNumbers = computed(() => {
@@ -145,7 +155,7 @@ const sortLabels = computed(() => [
 
 const chipsRef = ref<HTMLElement | null>(null)
 const pgNumbersRef = ref<HTMLElement | null>(null)
-const mainScrollRef = ref<HTMLElement | null>(null)
+const resultsListRef = ref<HTMLElement | null>(null)
 
 function scrollChips(dir: number) {
   if (!chipsRef.value) return
@@ -323,9 +333,9 @@ function scrollChips(dir: number) {
           </div>
         </div>
 
-        <div ref="mainScrollRef" class="main-scroll">
+        <div class="main-scroll">
           <!-- Cards -->
-          <div class="results-list">
+          <div ref="resultsListRef" class="results-list">
             <DoctorListRow
               v-for="doc in doctors"
               :key="doc.id"
@@ -458,6 +468,8 @@ function scrollChips(dir: number) {
 .content-area {
   flex: 1;
   min-height: 0;
+  min-width: 0;
+  width: 100%;
   display: flex;
   overflow: hidden;
 }
@@ -538,6 +550,8 @@ function scrollChips(dir: number) {
   display: flex;
   flex-direction: column;
   min-height: 0;
+  min-width: 0;
+  width: 100%;
 }
 
 .main-header {
@@ -550,7 +564,10 @@ function scrollChips(dir: number) {
 .main-scroll {
   flex: 1;
   min-height: 0;
+  min-width: 0;
+  width: 100%;
   overflow-y: auto;
+  overflow-x: hidden;
   -webkit-overflow-scrolling: touch;
 }
 
@@ -674,13 +691,28 @@ function scrollChips(dir: number) {
 
   .results-header {
     width: 90%;
+    max-width: 100%;
     margin-inline: auto;
     padding-inline: 0;
   }
 
+  .results-list {
+    width: 90%;
+    max-width: 100%;
+    min-width: 0;
+    margin-inline: auto;
+    padding: 8px 0 24px;
+    box-sizing: border-box;
+  }
+
   .pagination {
+    width: 90%;
+    max-width: 100%;
+    min-width: 0;
+    margin-inline: auto;
     gap: 8px;
-    padding-inline: 12px;
+    padding: 24px 0 32px;
+    box-sizing: border-box;
   }
 
   .pg-numbers {

@@ -127,6 +127,10 @@ function handleChange(val: CalendarValue) {
   gap: 18px;
   box-shadow: 0 6px 24px rgba(0, 0, 0, 0.13);
   transition: box-shadow 0.15s;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
 }
 .row:hover { box-shadow: 0 6px 24px rgba(0, 0, 0, 0.13); }
 
@@ -135,6 +139,9 @@ function handleChange(val: CalendarValue) {
   display: flex;
   flex-direction: column;
   gap: 12px;
+  min-width: 0;
+  width: 100%;
+  max-width: 100%;
 }
 
 .doctor-link {
@@ -292,6 +299,8 @@ html[dir="rtl"] .fee-block {
   flex-direction: column;
   gap: 20px;
   min-width: 0;
+  width: 100%;
+  max-width: 100%;
   overflow: hidden;
 }
 

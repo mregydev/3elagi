@@ -238,6 +238,10 @@ onMounted(() => emitChange())
   display: flex;
   flex-direction: column;
   gap: 22px;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
 }
 .cal-root.compact { gap: 16px; }
 
@@ -246,6 +250,9 @@ onMounted(() => emitChange())
   display: flex;
   flex-direction: column;
   gap: 8px;
+  min-width: 0;
+  width: 100%;
+  max-width: 100%;
 }
 
 .cal-label {
@@ -261,6 +268,9 @@ onMounted(() => emitChange())
   display: flex;
   align-items: center;
   gap: 6px;
+  min-width: 0;
+  width: 100%;
+  max-width: 100%;
 }
 
 /* ── Nav arrows ───────────────────────────────────── */
@@ -287,13 +297,15 @@ onMounted(() => emitChange())
 
 /* ── Scrollable row ───────────────────────────────── */
 .scroll-row {
-  flex: 1;
+  flex: 1 1 0;
+  min-width: 0;
   display: flex;
   flex-direction: row;
   gap: 8px;
   overflow-x: auto;
   padding-bottom: 2px;
   scrollbar-width: none;
+  overscroll-behavior-x: contain;
 }
 .scroll-row::-webkit-scrollbar { display: none; }
 
@@ -366,6 +378,8 @@ onMounted(() => emitChange())
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
+  min-width: 0;
+  max-width: 100%;
 }
 
 .time-chip {
