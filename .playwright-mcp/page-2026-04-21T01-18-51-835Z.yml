@@ -1,0 +1,56 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - status [ref=e4]: حالة قائمة الانتظار — ٣علاجي
+    - generic [ref=e5]:
+      - banner [ref=e6]:
+        - link [ref=e7] [cursor=pointer]:
+          - /url: /
+          - img [ref=e8]
+        - generic [ref=e10]: حالة قائمة الانتظار
+      - generic [ref=e11]:
+        - img [ref=e13]
+        - generic [ref=e16]:
+          - generic [ref=e17]: Dr. Ahmed Hassan
+          - generic [ref=e18]: Cardiologist · Cairo Heart Center
+      - generic [ref=e21]:
+        - generic [ref=e22]: ⏳
+        - generic [ref=e23]: "#7"
+        - generic [ref=e24]: رقمك
+      - generic [ref=e26]: أنت في قائمة الانتظار
+      - paragraph [ref=e27]: يُرجى البقاء قريباً. سنُعلمك عند اقتراب دورك.
+      - generic [ref=e28]:
+        - generic [ref=e29]:
+          - generic [ref=e30]: "6"
+          - generic [ref=e31]: قبلك
+        - generic [ref=e33]:
+          - generic [ref=e34]: ~48 د
+          - generic [ref=e35]: الانتظار التقريبي
+        - generic [ref=e37]:
+          - generic [ref=e38]: "12"
+          - generic [ref=e39]: إجمالي القائمة
+      - generic [ref=e41]:
+        - generic [ref=e42]: تقدم القائمة
+        - generic [ref=e43]: 50%
+      - generic [ref=e46]:
+        - generic [ref=e47]: "1"
+        - generic [ref=e48]: "2"
+        - generic [ref=e49]: "3"
+        - generic [ref=e50]: "4"
+        - generic [ref=e51]: "5"
+        - generic [ref=e52]: "6"
+        - generic [ref=e53]: "7"
+        - generic [ref=e54]: "8"
+        - generic [ref=e55]: "9"
+        - generic [ref=e56]: "10"
+        - generic [ref=e57]: "11"
+        - generic [ref=e58]: "12"
+  - generic:
+    - img
+  - generic [ref=e59]:
+    - button "Toggle Nuxt DevTools" [ref=e60] [cursor=pointer]:
+      - img [ref=e61]
+    - generic "Page load time" [ref=e64]:
+      - generic [ref=e65]: "3"
+      - generic [ref=e66]: ms
+    - button "Toggle Component Inspector" [ref=e68] [cursor=pointer]:
+      - img [ref=e69]

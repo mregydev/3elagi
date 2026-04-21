@@ -1,0 +1,77 @@
+- main [ref=e5]:
+  - generic [ref=e6]:
+    - generic [ref=e7]:
+      - generic [ref=e8]:
+        - heading "ملفي المهني" [level=1] [ref=e9]
+        - paragraph [ref=e10]: إدارة معلوماتك المهنية
+      - button "حفظ التغييرات" [ref=e11] [cursor=pointer]
+    - generic [ref=e12]:
+      - generic [ref=e13]:
+        - generic [ref=e16]:
+          - img [ref=e18]
+          - generic [ref=e21]:
+            - generic [ref=e22]: Dr. Ahmed Hassan
+            - generic [ref=e23]: Cardiologist
+            - button "تغيير الصورة" [ref=e24] [cursor=pointer]
+        - generic [ref=e25]:
+          - generic [ref=e27]: البيانات الشخصية
+          - generic [ref=e29]:
+            - generic [ref=e30]:
+              - generic [ref=e31]: الاسم الكامل
+              - textbox "الاسم الكامل" [ref=e32]: Dr. Ahmed Hassan
+            - generic [ref=e33]:
+              - generic [ref=e34]: البريد الإلكتروني
+              - textbox "البريد الإلكتروني" [ref=e35]: ahmed.hassan@clinic.com
+            - generic [ref=e36]:
+              - generic [ref=e37]: الهاتف
+              - textbox "الهاتف" [ref=e38]: +20 100 123 4567
+            - generic [ref=e39]:
+              - generic [ref=e40]: تاريخ الميلاد
+              - textbox "تاريخ الميلاد" [ref=e41]: 12 Mar 1980
+      - generic [ref=e42]:
+        - generic [ref=e43]:
+          - generic [ref=e45]: بيانات العيادة
+          - generic [ref=e47]:
+            - generic [ref=e48]:
+              - generic [ref=e49]: اسم العيادة
+              - textbox "اسم العيادة" [ref=e50]: Cairo Heart Center
+            - generic [ref=e51]:
+              - generic [ref=e52]: الموقع
+              - textbox "الموقع" [ref=e53]: Maadi, Cairo
+            - generic [ref=e54]:
+              - generic [ref=e55]: رسوم الكشف (جنيه)
+              - textbox "رسوم الكشف (جنيه)" [ref=e56]: "500"
+            - generic [ref=e57]:
+              - generic [ref=e58]: سنوات الخبرة
+              - textbox "سنوات الخبرة" [ref=e59]: "12"
+            - generic [ref=e60]:
+              - generic [ref=e61]: اللغات
+              - generic [ref=e62]:
+                - generic [ref=e63]: Arabic
+                - generic [ref=e64]: English
+                - button "+ إضافة" [ref=e65] [cursor=pointer]
+        - generic [ref=e66]:
+          - generic [ref=e68]: التخصصات
+          - generic [ref=e70]:
+            - generic [ref=e71]:
+              - text: Cardiology
+              - button "×" [ref=e72] [cursor=pointer]
+            - generic [ref=e73]:
+              - text: Internal Medicine
+              - button "×" [ref=e74] [cursor=pointer]
+            - generic [ref=e75]:
+              - text: Hypertension
+              - button "×" [ref=e76] [cursor=pointer]
+            - button "+ إضافة تخصص" [ref=e77] [cursor=pointer]
+        - generic [ref=e78]:
+          - generic [ref=e80]: حالة المستندات
+          - generic [ref=e82]:
+            - generic [ref=e84]:
+              - generic [ref=e85]: ترخيص مزاولة المهنة
+              - generic [ref=e86]: مقبول
+            - generic [ref=e88]:
+              - generic [ref=e89]: الرقم القومي
+              - generic [ref=e90]: قيد المراجعة
+            - generic [ref=e92]:
+              - generic [ref=e93]: شهادة التخصص
+              - generic [ref=e94]: مرفوض

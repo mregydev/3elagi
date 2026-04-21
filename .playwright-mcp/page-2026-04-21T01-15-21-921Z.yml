@@ -1,0 +1,42 @@
+- generic [ref=e5]:
+  - generic [ref=e6]:
+    - generic [ref=e7]:
+      - img "3elagi" [ref=e8]:
+        - generic [ref=e16]: 3elagi
+      - heading "مرحباً بعودتك." [level=1] [ref=e17]
+      - paragraph [ref=e18]: احجز مواعيد مع أفضل الأطباء في دقائق.
+    - generic [ref=e19]:
+      - generic [ref=e20]:
+        - img [ref=e22]
+        - generic [ref=e24]: أطباء موثوقون في أكثر من ٢٠ تخصصاً
+      - generic [ref=e25]:
+        - img [ref=e27]
+        - generic [ref=e29]: حجز فوري بلا انتظار
+      - generic [ref=e30]:
+        - img [ref=e32]
+        - generic [ref=e34]: تذكير ومتابعات مدمجة
+  - generic [ref=e35]:
+    - generic [ref=e36]:
+      - link "تسجيل الدخول" [ref=e37] [cursor=pointer]:
+        - /url: /auth/login
+      - link "إنشاء حساب" [ref=e38] [cursor=pointer]:
+        - /url: /auth/signup
+    - heading "سجّل الدخول إلى حسابك" [level=2] [ref=e39]
+    - generic [ref=e40]:
+      - generic [ref=e41]:
+        - generic [ref=e42]: عنوان البريد الإلكتروني
+        - textbox "عنوان البريد الإلكتروني" [ref=e43]:
+          - /placeholder: you@example.com
+      - generic [ref=e44]:
+        - generic [ref=e45]:
+          - generic [ref=e46]: كلمة المرور
+          - link "نسيت كلمة المرور؟" [ref=e47] [cursor=pointer]:
+            - /url: "#"
+        - textbox "كلمة المرور" [ref=e48]:
+          - /placeholder: ••••••••
+    - generic [ref=e49]:
+      - button "تسجيل الدخول" [ref=e50] [cursor=pointer]
+      - paragraph [ref=e51]:
+        - text: ليس لديك حساب؟
+        - link "إنشاء حساب" [ref=e52] [cursor=pointer]:
+          - /url: /auth/signup

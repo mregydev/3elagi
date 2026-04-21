@@ -344,9 +344,6 @@ const FLAG_EG = 'https://flagcdn.com/w40/eg.png'
 .btn-filled:hover { background: var(--blue); border-color: var(--blue); }
 
 @media (min-width: 768px) {
-  .nav { height: 60px; padding: 0 40px; }
-  .nav-links { display: flex; }
-
   .lang-trigger {
     height: 36px;
     padding-inline: 8px 12px;
@@ -375,7 +372,70 @@ const FLAG_EG = 'https://flagcdn.com/w40/eg.png'
     width: 36px;
     height: 26px;
   }
+}
 
-  .btn-outline, .btn-filled { height: 36px; padding: 0 18px; font-size: 14px; }
+/* Mobile + tablet: column layout with centered logo and full-width auth buttons */
+@media (max-width: 1023px) {
+  .nav {
+    flex-direction: column;
+    height: auto;
+    padding: 12px 16px;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .nav-links { display: none; }
+
+  .lang-switcher {
+    position: absolute;
+    top: 14px;
+    inset-inline-end: 16px;
+  }
+
+  .nav-actions {
+    flex-direction: column;
+    width: 100%;
+    gap: 8px;
+  }
+
+  .btn-outline,
+  .btn-filled {
+    width: 100%;
+    height: 44px;
+    font-size: 15px;
+    padding: 0;
+    justify-content: center;
+  }
+}
+
+/* Desktop: restore horizontal layout */
+@media (min-width: 1024px) {
+  .nav {
+    flex-direction: row;
+    height: 60px;
+    padding: 0 40px;
+    gap: 0;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .nav-links { display: flex; }
+
+  .lang-switcher { position: relative; }
+
+  .nav-actions {
+    flex-direction: row;
+    width: auto;
+    gap: 8px;
+    align-items: center;
+  }
+
+  .btn-outline,
+  .btn-filled {
+    width: auto;
+    height: 36px;
+    font-size: 14px;
+    padding: 0 18px;
+  }
 }
 </style>

@@ -36,10 +36,13 @@ const activeSortIdx = ref(0)
 const currentPage = ref(1)
 const totalPages = 6
 
-function goToPage(p: number) {
+async function goToPage(p: number) {
   if (p < 1 || p > totalPages) return
   currentPage.value = p
   if (import.meta.client) window.scrollTo({ top: 0, behavior: 'smooth' })
+  await nextTick()
+  const active = pgNumbersRef.value?.querySelector<HTMLElement>('.pg-btn.active')
+  active?.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' })
 }
 
 const pageNumbers = computed(() => {
@@ -144,6 +147,14 @@ const sortLabels = computed(() => [
   t('home.rating'),
   t('home.priceLow'),
 ])
+
+const chipsRef = ref<HTMLElement | null>(null)
+const pgNumbersRef = ref<HTMLElement | null>(null)
+
+function scrollChips(dir: number) {
+  if (!chipsRef.value) return
+  chipsRef.value.scrollBy({ left: dir * 150, behavior: 'smooth' })
+}
 </script>
 
 <template>
@@ -158,14 +169,26 @@ const sortLabels = computed(() => [
         </svg>
         <input v-model="searchQuery" :placeholder="t('home.searchMobile')" />
       </div>
-      <div class="filter-chips">
-        <FilterChip
-          v-for="key in filterChipKeys"
-          :key="key"
-          :label="key === 'all' ? t('filter.all') : t(`filter.${key}`)"
-          :active="activeFilterKey === key"
-          @click="activeFilterKey = key"
-        />
+      <div class="chips-wrap">
+        <button class="chips-arrow" aria-label="previous" @click="scrollChips(-1)">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <path d="m15 18-6-6 6-6" />
+          </svg>
+        </button>
+        <div ref="chipsRef" class="filter-chips">
+          <FilterChip
+            v-for="key in filterChipKeys"
+            :key="key"
+            :label="key === 'all' ? t('filter.all') : t(`filter.${key}`)"
+            :active="activeFilterKey === key"
+            @click="activeFilterKey = key"
+          />
+        </div>
+        <button class="chips-arrow" aria-label="next" @click="scrollChips(1)">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <path d="m9 18 6-6-6-6" />
+          </svg>
+        </button>
       </div>
     </div>
 
@@ -324,8 +347,9 @@ const sortLabels = computed(() => [
 
         <!-- Pagination -->
         <div class="pagination">
+          <!-- Prev — always points left ← -->
           <button
-            class="pg-arrow cn-rtl-flip"
+            class="pg-arrow"
             :disabled="currentPage === 1"
             @click="goToPage(currentPage - 1)"
           >
@@ -334,18 +358,21 @@ const sortLabels = computed(() => [
             </svg>
           </button>
 
-          <template v-for="p in pageNumbers" :key="p">
-            <span v-if="p === '…'" class="pg-ellipsis">…</span>
-            <button
-              v-else
-              class="pg-btn"
-              :class="{ active: currentPage === p }"
-              @click="goToPage(p as number)"
-            >{{ p }}</button>
-          </template>
+          <div ref="pgNumbersRef" class="pg-numbers">
+            <template v-for="p in pageNumbers" :key="p">
+              <span v-if="p === '…'" class="pg-ellipsis">…</span>
+              <button
+                v-else
+                class="pg-btn"
+                :class="{ active: currentPage === p }"
+                @click="goToPage(p as number)"
+              >{{ p }}</button>
+            </template>
+          </div>
 
+          <!-- Next — always points right → -->
           <button
-            class="pg-arrow cn-rtl-flip"
+            class="pg-arrow"
             :disabled="currentPage === totalPages"
             @click="goToPage(currentPage + 1)"
           >
@@ -398,13 +425,43 @@ const sortLabels = computed(() => [
 
 .search-input input::placeholder { color: var(--gray-2); }
 
+.chips-wrap {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 12px;
+  /* Force LTR so ← is always on the left and → always on the right */
+  direction: ltr;
+}
+
+.chips-arrow {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1.5px solid var(--gray-1);
+  background: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  cursor: pointer;
+  color: var(--gray-3);
+  transition: all 0.15s;
+}
+
+.chips-arrow:hover {
+  border-color: var(--blue-m);
+  color: var(--blue-m);
+}
+
 .filter-chips {
+  flex: 1;
   display: flex;
   gap: 8px;
-  margin-top: 12px;
   overflow-x: auto;
-  padding-bottom: 2px;
+  padding: 4px 2px;
   scrollbar-width: none;
+  direction: rtl; /* restore document direction inside ltr chips-wrap */
 }
 .filter-chips::-webkit-scrollbar { display: none; }
 
@@ -528,7 +585,7 @@ const sortLabels = computed(() => [
 }
 
 /* ── Desktop layout ───────────────────────────────── */
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .mobile-search-bar { display: none; }
 
   .sidebar {
@@ -602,6 +659,37 @@ const sortLabels = computed(() => [
   }
 }
 
+/* ── Mobile/tablet: no horizontal overflow ─────────── */
+@media (max-width: 1023px) {
+  .page { overflow-x: hidden; }
+
+  .results-header {
+    width: 90%;
+    margin-inline: auto;
+    padding-inline: 0;
+  }
+
+  .pagination {
+    gap: 8px;
+    padding-inline: 12px;
+  }
+
+  .pg-numbers {
+    flex: 1;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+    padding: 4px 2px;
+    gap: 6px;
+    justify-content: flex-start;
+  }
+
+  .pg-numbers::-webkit-scrollbar { display: none; }
+
+  .pg-btn { scroll-snap-align: center; flex-shrink: 0; }
+  .pg-ellipsis { flex-shrink: 0; }
+}
+
 /* ── Pagination ───────────────────────────────────── */
 .pagination {
   display: flex;
@@ -609,6 +697,14 @@ const sortLabels = computed(() => [
   justify-content: center;
   gap: 6px;
   padding: 24px 16px 32px;
+  /* Force LTR so ← is always on the left and → always on the right */
+  direction: ltr;
+}
+
+.pg-numbers {
+  display: flex;
+  align-items: center;
+  gap: 6px;
 }
 
 .pg-btn {
@@ -670,7 +766,7 @@ const sortLabels = computed(() => [
   user-select: none;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .pagination {
     padding: 28px 28px 40px;
     gap: 8px;

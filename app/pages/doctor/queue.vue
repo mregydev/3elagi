@@ -209,4 +209,25 @@ const todayLabel = computed(() =>
 .stats-sidebar { width: 160px; display: flex; flex-direction: column; gap: 12px; flex-shrink: 0; }
 .stat-value { font-size: 28px; font-weight: 800; color: var(--ink); line-height: 1; }
 .stat-label { font-size: 12px; color: var(--gray-3); margin-top: 4px; }
+
+/* Mobile */
+@media (max-width: 767px) {
+  .main-inner { padding: 20px 16px; }
+
+  .page-header {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .page-title { font-size: 18px; }
+
+  .layout { flex-direction: column; }
+
+  .stats-sidebar {
+    width: 100%;
+    flex-direction: row;
+  }
+
+  .stats-sidebar > * { flex: 1; }
+}
 </style>

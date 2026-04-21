@@ -1,0 +1,557 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - status [ref=e4]: ٣علاجي — ابحث عن أطباء
+    - generic [ref=e5]:
+      - banner [ref=e6]:
+        - link "3elagi" [ref=e7] [cursor=pointer]:
+          - /url: /
+          - img "3elagi" [ref=e8]:
+            - generic [ref=e16]: 3elagi
+        - navigation [ref=e17]:
+          - link "ابحث عن طبيب" [ref=e18] [cursor=pointer]:
+            - /url: /
+          - link "التخصصات" [ref=e19] [cursor=pointer]:
+            - /url: /specialties
+          - link "كيف يعمل" [ref=e20] [cursor=pointer]:
+            - /url: /how-it-works
+        - generic [ref=e21]:
+          - button "اختر اللغة" [ref=e23] [cursor=pointer]:
+            - generic [ref=e25]: AR
+          - link "تسجيل الدخول" [ref=e26] [cursor=pointer]:
+            - /url: /auth/login
+          - link "إنشاء حساب" [ref=e27] [cursor=pointer]:
+            - /url: /auth/signup
+      - generic [ref=e28]:
+        - complementary [ref=e29]:
+          - generic [ref=e30]:
+            - generic [ref=e31]: التخصص
+            - generic [ref=e34] [cursor=pointer]: أمراض القلب
+            - generic [ref=e37] [cursor=pointer]: طب الأطفال
+            - generic [ref=e40] [cursor=pointer]: العظام
+            - generic [ref=e43] [cursor=pointer]: الجلدية
+            - generic [ref=e46] [cursor=pointer]: أنف وأذن وحنجرة
+            - generic [ref=e49] [cursor=pointer]: طب العيون
+            - generic [ref=e52] [cursor=pointer]: المخ والأعصاب
+          - generic [ref=e54]:
+            - generic [ref=e55]: التوافر
+            - generic [ref=e58] [cursor=pointer]: أي وقت
+            - generic [ref=e61] [cursor=pointer]: اليوم
+            - generic [ref=e64] [cursor=pointer]: غداً
+            - generic [ref=e67] [cursor=pointer]: هذا الأسبوع
+          - generic [ref=e69]:
+            - generic [ref=e70]: نوع الاستشارة
+            - generic [ref=e73] [cursor=pointer]:
+              - generic [ref=e74]: 📹
+              - text: استشارة عن بُعد
+            - generic [ref=e77] [cursor=pointer]:
+              - generic [ref=e78]: 🔁
+              - text: زيارات المتابعة
+          - generic [ref=e80]:
+            - generic [ref=e81]: التقييم
+            - generic [ref=e82] [cursor=pointer]:
+              - generic [ref=e84]:
+                - img [ref=e85]
+                - img [ref=e87]
+                - img [ref=e89]
+                - img [ref=e91]
+                - img [ref=e93]
+              - generic [ref=e95]: ٥ نجوم
+            - generic [ref=e96] [cursor=pointer]:
+              - generic [ref=e98]:
+                - img [ref=e99]
+                - img [ref=e101]
+                - img [ref=e103]
+                - img [ref=e105]
+                - img [ref=e107]
+              - generic [ref=e109]: ٤ نجوم فأكثر
+            - generic [ref=e110] [cursor=pointer]:
+              - generic [ref=e112]:
+                - img [ref=e113]
+                - img [ref=e115]
+                - img [ref=e117]
+                - img [ref=e119]
+                - img [ref=e121]
+              - generic [ref=e123]: ٣ نجوم فأكثر
+        - generic [ref=e124]:
+          - generic [ref=e125]:
+            - generic [ref=e126]:
+              - img [ref=e127]
+              - textbox "ابحث عن أطباء أو تخصصات أو عيادات…" [ref=e130]
+            - button "بحث" [ref=e131] [cursor=pointer]
+          - generic [ref=e132]:
+            - generic [ref=e134]:
+              - text: عرض
+              - strong [ref=e135]: 24 طبيب
+              - text: في القاهرة
+            - generic [ref=e137]:
+              - button "الأكثر صلة" [ref=e138] [cursor=pointer]
+              - button "التقييم" [ref=e139] [cursor=pointer]
+              - 'button "السعر: الأقل" [ref=e140] [cursor=pointer]'
+          - generic [ref=e141]:
+            - generic [ref=e142]:
+              - generic [ref=e143]:
+                - link "Photo of Dr. Sara Ahmed Dr. Sara Ahmed أخصائي قلب · مستشفى عين شمس 5.0 · 12 سنة خبرة موجات صوتية للقلب اختبار جهد قسطرة علاجية هولتر" [ref=e144] [cursor=pointer]:
+                  - /url: /doctors/1
+                  - img "Photo of Dr. Sara Ahmed" [ref=e145]
+                  - generic [ref=e146]:
+                    - generic [ref=e147]: Dr. Sara Ahmed
+                    - generic [ref=e148]: أخصائي قلب · مستشفى عين شمس
+                    - generic [ref=e149]:
+                      - generic [ref=e150]:
+                        - img [ref=e151]
+                        - img [ref=e153]
+                        - img [ref=e155]
+                        - img [ref=e157]
+                        - img [ref=e159]
+                      - generic [ref=e161]: 5.0 · 12 سنة خبرة
+                    - generic [ref=e162]:
+                      - generic [ref=e163]: موجات صوتية للقلب
+                      - generic [ref=e164]: اختبار جهد
+                      - generic [ref=e165]: قسطرة علاجية
+                      - generic [ref=e166]: هولتر
+                - generic [ref=e167]:
+                  - generic [ref=e168]:
+                    - generic [ref=e169]: متاح اليوم
+                    - generic [ref=e170]:
+                      - img [ref=e171]
+                      - text: عن بُعد
+                    - generic [ref=e173]:
+                      - img [ref=e174]
+                      - text: متابعة
+                  - generic [ref=e177]:
+                    - generic [ref=e178]: 350 EGP
+                    - generic [ref=e179]: للزيارة
+              - generic [ref=e180]:
+                - generic [ref=e181]: اختر موعداً
+                - generic [ref=e182]:
+                  - generic [ref=e183]:
+                    - generic [ref=e184]: الشهر
+                    - generic [ref=e185]:
+                      - button "السابق" [ref=e186] [cursor=pointer]:
+                        - img [ref=e187]
+                      - generic:
+                        - button "أبريل" [ref=e189] [cursor=pointer]
+                        - button "مايو" [ref=e190] [cursor=pointer]
+                        - button "يونيو" [ref=e191] [cursor=pointer]
+                        - button "يوليو" [ref=e192] [cursor=pointer]
+                        - button "أغسطس" [ref=e193] [cursor=pointer]
+                        - button "سبتمبر" [ref=e194] [cursor=pointer]
+                      - button "التالي" [ref=e195] [cursor=pointer]:
+                        - img [ref=e196]
+                  - generic [ref=e198]:
+                    - generic [ref=e199]: اليوم
+                    - generic [ref=e200]:
+                      - button "السابق" [ref=e201] [cursor=pointer]:
+                        - img [ref=e202]
+                      - generic:
+                        - button "الثلاثاء 21" [ref=e204] [cursor=pointer]:
+                          - generic [ref=e205]: الثلاثاء
+                          - generic [ref=e206]: "21"
+                        - button "الأربعاء 22" [ref=e207] [cursor=pointer]:
+                          - generic [ref=e208]: الأربعاء
+                          - generic [ref=e209]: "22"
+                        - button "الخميس 23" [ref=e210] [cursor=pointer]:
+                          - generic [ref=e211]: الخميس
+                          - generic [ref=e212]: "23"
+                        - button "الجمعة 24" [ref=e213] [cursor=pointer]:
+                          - generic [ref=e214]: الجمعة
+                          - generic [ref=e215]: "24"
+                        - button "السبت 25" [ref=e216] [cursor=pointer]:
+                          - generic [ref=e217]: السبت
+                          - generic [ref=e218]: "25"
+                        - button "الأحد 26" [ref=e219] [cursor=pointer]:
+                          - generic [ref=e220]: الأحد
+                          - generic [ref=e221]: "26"
+                        - button "الاثنين 27" [ref=e222] [cursor=pointer]:
+                          - generic [ref=e223]: الاثنين
+                          - generic [ref=e224]: "27"
+                        - button "الثلاثاء 28" [ref=e225] [cursor=pointer]:
+                          - generic [ref=e226]: الثلاثاء
+                          - generic [ref=e227]: "28"
+                        - button "الأربعاء 29" [ref=e228] [cursor=pointer]:
+                          - generic [ref=e229]: الأربعاء
+                          - generic [ref=e230]: "29"
+                        - button "الخميس 30" [ref=e231] [cursor=pointer]:
+                          - generic [ref=e232]: الخميس
+                          - generic [ref=e233]: "30"
+                      - button "التالي" [ref=e234] [cursor=pointer]:
+                        - img [ref=e235]
+                  - generic [ref=e237]:
+                    - generic [ref=e238]: الصباح
+                    - generic [ref=e239]:
+                      - button "٩:٠٠ ص" [ref=e240] [cursor=pointer]
+                      - button "٩:٣٠ ص" [ref=e241] [cursor=pointer]
+                      - button "١٠:٠٠ ص" [ref=e242] [cursor=pointer]
+                      - button "١٠:٣٠ ص" [ref=e243] [cursor=pointer]
+                      - button "١١:٠٠ ص" [ref=e244] [cursor=pointer]
+                      - button "١١:٣٠ ص" [ref=e245] [cursor=pointer]
+                  - generic [ref=e246]:
+                    - generic [ref=e247]: بعد الظهر والمساء
+                    - generic [ref=e248]:
+                      - button "٢:٠٠ م" [ref=e249] [cursor=pointer]
+                      - button "٣:٠٠ م" [ref=e250] [cursor=pointer]
+                      - button "٤:٠٠ م" [ref=e251] [cursor=pointer]
+                      - button "٤:٣٠ م" [ref=e252] [cursor=pointer]
+                      - button "٥:٠٠ م" [ref=e253] [cursor=pointer]
+                      - button "٦:٠٠ م" [ref=e254] [cursor=pointer]
+                      - button "٨:٠٠ م" [ref=e255] [cursor=pointer]
+                      - button "١٠:٠٠ م" [ref=e256] [cursor=pointer]
+                - generic [ref=e257]:
+                  - generic:
+                    - generic: المختار
+                    - generic: الثلاثاء, أبريل 21 · ٩:٠٠ ص
+                  - link "احجز" [ref=e258] [cursor=pointer]:
+                    - /url: /auth/login
+            - generic [ref=e259]:
+              - generic [ref=e260]:
+                - link "Photo of Dr. Omar Fawzy Dr. Omar Fawzy أخصائي أطفال · عيادة أطفال المعادي 4.0 · 8 سنة خبرة تطعيم تقييم النمو فحص حديثي الولادة" [ref=e261] [cursor=pointer]:
+                  - /url: /doctors/2
+                  - img "Photo of Dr. Omar Fawzy" [ref=e262]
+                  - generic [ref=e263]:
+                    - generic [ref=e264]: Dr. Omar Fawzy
+                    - generic [ref=e265]: أخصائي أطفال · عيادة أطفال المعادي
+                    - generic [ref=e266]:
+                      - generic [ref=e267]:
+                        - img [ref=e268]
+                        - img [ref=e270]
+                        - img [ref=e272]
+                        - img [ref=e274]
+                        - img [ref=e276]
+                      - generic [ref=e278]: 4.0 · 8 سنة خبرة
+                    - generic [ref=e279]:
+                      - generic [ref=e280]: تطعيم
+                      - generic [ref=e281]: تقييم النمو
+                      - generic [ref=e282]: فحص حديثي الولادة
+                - generic [ref=e283]:
+                  - generic [ref=e284]:
+                    - generic [ref=e285]: متاح اليوم
+                    - generic [ref=e286]:
+                      - img [ref=e287]
+                      - text: عن بُعد
+                  - generic [ref=e289]:
+                    - generic [ref=e290]: 200 EGP
+                    - generic [ref=e291]: للزيارة
+              - generic [ref=e292]:
+                - generic [ref=e293]: اختر موعداً
+                - generic [ref=e294]:
+                  - generic [ref=e295]:
+                    - generic [ref=e296]: الشهر
+                    - generic [ref=e297]:
+                      - button "السابق" [ref=e298] [cursor=pointer]:
+                        - img [ref=e299]
+                      - generic:
+                        - button "أبريل" [ref=e301] [cursor=pointer]
+                        - button "مايو" [ref=e302] [cursor=pointer]
+                        - button "يونيو" [ref=e303] [cursor=pointer]
+                        - button "يوليو" [ref=e304] [cursor=pointer]
+                        - button "أغسطس" [ref=e305] [cursor=pointer]
+                        - button "سبتمبر" [ref=e306] [cursor=pointer]
+                      - button "التالي" [ref=e307] [cursor=pointer]:
+                        - img [ref=e308]
+                  - generic [ref=e310]:
+                    - generic [ref=e311]: اليوم
+                    - generic [ref=e312]:
+                      - button "السابق" [ref=e313] [cursor=pointer]:
+                        - img [ref=e314]
+                      - generic:
+                        - button "الثلاثاء 21" [ref=e316] [cursor=pointer]:
+                          - generic [ref=e317]: الثلاثاء
+                          - generic [ref=e318]: "21"
+                        - button "الأربعاء 22" [ref=e319] [cursor=pointer]:
+                          - generic [ref=e320]: الأربعاء
+                          - generic [ref=e321]: "22"
+                        - button "الخميس 23" [ref=e322] [cursor=pointer]:
+                          - generic [ref=e323]: الخميس
+                          - generic [ref=e324]: "23"
+                        - button "الجمعة 24" [ref=e325] [cursor=pointer]:
+                          - generic [ref=e326]: الجمعة
+                          - generic [ref=e327]: "24"
+                        - button "السبت 25" [ref=e328] [cursor=pointer]:
+                          - generic [ref=e329]: السبت
+                          - generic [ref=e330]: "25"
+                        - button "الأحد 26" [ref=e331] [cursor=pointer]:
+                          - generic [ref=e332]: الأحد
+                          - generic [ref=e333]: "26"
+                        - button "الاثنين 27" [ref=e334] [cursor=pointer]:
+                          - generic [ref=e335]: الاثنين
+                          - generic [ref=e336]: "27"
+                        - button "الثلاثاء 28" [ref=e337] [cursor=pointer]:
+                          - generic [ref=e338]: الثلاثاء
+                          - generic [ref=e339]: "28"
+                        - button "الأربعاء 29" [ref=e340] [cursor=pointer]:
+                          - generic [ref=e341]: الأربعاء
+                          - generic [ref=e342]: "29"
+                        - button "الخميس 30" [ref=e343] [cursor=pointer]:
+                          - generic [ref=e344]: الخميس
+                          - generic [ref=e345]: "30"
+                      - button "التالي" [ref=e346] [cursor=pointer]:
+                        - img [ref=e347]
+                  - generic [ref=e349]:
+                    - generic [ref=e350]: الصباح
+                    - generic [ref=e351]:
+                      - button "٩:٠٠ ص" [ref=e352] [cursor=pointer]
+                      - button "٩:٣٠ ص" [ref=e353] [cursor=pointer]
+                      - button "١٠:٠٠ ص" [ref=e354] [cursor=pointer]
+                      - button "١٠:٣٠ ص" [ref=e355] [cursor=pointer]
+                      - button "١١:٠٠ ص" [ref=e356] [cursor=pointer]
+                      - button "١١:٣٠ ص" [ref=e357] [cursor=pointer]
+                  - generic [ref=e358]:
+                    - generic [ref=e359]: بعد الظهر والمساء
+                    - generic [ref=e360]:
+                      - button "٢:٠٠ م" [ref=e361] [cursor=pointer]
+                      - button "٣:٠٠ م" [ref=e362] [cursor=pointer]
+                      - button "٤:٠٠ م" [ref=e363] [cursor=pointer]
+                      - button "٤:٣٠ م" [ref=e364] [cursor=pointer]
+                      - button "٥:٠٠ م" [ref=e365] [cursor=pointer]
+                      - button "٦:٠٠ م" [ref=e366] [cursor=pointer]
+                      - button "٨:٠٠ م" [ref=e367] [cursor=pointer]
+                      - button "١٠:٠٠ م" [ref=e368] [cursor=pointer]
+                - generic [ref=e369]:
+                  - generic:
+                    - generic: المختار
+                    - generic: الثلاثاء, أبريل 21 · ٩:٠٠ ص
+                  - link "احجز" [ref=e370] [cursor=pointer]:
+                    - /url: /auth/login
+            - generic [ref=e371]:
+              - generic [ref=e372]:
+                - link "Photo of Dr. Nour Khalil Dr. Nour Khalil أخصائي جلدية · مركز القاهرة للجلدية 4.0 · 6 سنة خبرة علاج بالليزر تقشير كيميائي علاج حب الشباب إزالة شامة" [ref=e373] [cursor=pointer]:
+                  - /url: /doctors/3
+                  - img "Photo of Dr. Nour Khalil" [ref=e374]
+                  - generic [ref=e375]:
+                    - generic [ref=e376]: Dr. Nour Khalil
+                    - generic [ref=e377]: أخصائي جلدية · مركز القاهرة للجلدية
+                    - generic [ref=e378]:
+                      - generic [ref=e379]:
+                        - img [ref=e380]
+                        - img [ref=e382]
+                        - img [ref=e384]
+                        - img [ref=e386]
+                        - img [ref=e388]
+                      - generic [ref=e390]: 4.0 · 6 سنة خبرة
+                    - generic [ref=e391]:
+                      - generic [ref=e392]: علاج بالليزر
+                      - generic [ref=e393]: تقشير كيميائي
+                      - generic [ref=e394]: علاج حب الشباب
+                      - generic [ref=e395]: إزالة شامة
+                - generic [ref=e396]:
+                  - generic [ref=e397]:
+                    - generic [ref=e398]: غداً
+                    - generic [ref=e399]:
+                      - img [ref=e400]
+                      - text: متابعة
+                  - generic [ref=e403]:
+                    - generic [ref=e404]: 280 EGP
+                    - generic [ref=e405]: للزيارة
+              - generic [ref=e406]:
+                - generic [ref=e407]: اختر موعداً
+                - generic [ref=e408]:
+                  - generic [ref=e409]:
+                    - generic [ref=e410]: الشهر
+                    - generic [ref=e411]:
+                      - button "السابق" [ref=e412] [cursor=pointer]:
+                        - img [ref=e413]
+                      - generic:
+                        - button "أبريل" [ref=e415] [cursor=pointer]
+                        - button "مايو" [ref=e416] [cursor=pointer]
+                        - button "يونيو" [ref=e417] [cursor=pointer]
+                        - button "يوليو" [ref=e418] [cursor=pointer]
+                        - button "أغسطس" [ref=e419] [cursor=pointer]
+                        - button "سبتمبر" [ref=e420] [cursor=pointer]
+                      - button "التالي" [ref=e421] [cursor=pointer]:
+                        - img [ref=e422]
+                  - generic [ref=e424]:
+                    - generic [ref=e425]: اليوم
+                    - generic [ref=e426]:
+                      - button "السابق" [ref=e427] [cursor=pointer]:
+                        - img [ref=e428]
+                      - generic:
+                        - button "الثلاثاء 21" [ref=e430] [cursor=pointer]:
+                          - generic [ref=e431]: الثلاثاء
+                          - generic [ref=e432]: "21"
+                        - button "الأربعاء 22" [ref=e433] [cursor=pointer]:
+                          - generic [ref=e434]: الأربعاء
+                          - generic [ref=e435]: "22"
+                        - button "الخميس 23" [ref=e436] [cursor=pointer]:
+                          - generic [ref=e437]: الخميس
+                          - generic [ref=e438]: "23"
+                        - button "الجمعة 24" [ref=e439] [cursor=pointer]:
+                          - generic [ref=e440]: الجمعة
+                          - generic [ref=e441]: "24"
+                        - button "السبت 25" [ref=e442] [cursor=pointer]:
+                          - generic [ref=e443]: السبت
+                          - generic [ref=e444]: "25"
+                        - button "الأحد 26" [ref=e445] [cursor=pointer]:
+                          - generic [ref=e446]: الأحد
+                          - generic [ref=e447]: "26"
+                        - button "الاثنين 27" [ref=e448] [cursor=pointer]:
+                          - generic [ref=e449]: الاثنين
+                          - generic [ref=e450]: "27"
+                        - button "الثلاثاء 28" [ref=e451] [cursor=pointer]:
+                          - generic [ref=e452]: الثلاثاء
+                          - generic [ref=e453]: "28"
+                        - button "الأربعاء 29" [ref=e454] [cursor=pointer]:
+                          - generic [ref=e455]: الأربعاء
+                          - generic [ref=e456]: "29"
+                        - button "الخميس 30" [ref=e457] [cursor=pointer]:
+                          - generic [ref=e458]: الخميس
+                          - generic [ref=e459]: "30"
+                      - button "التالي" [ref=e460] [cursor=pointer]:
+                        - img [ref=e461]
+                  - generic [ref=e463]:
+                    - generic [ref=e464]: الصباح
+                    - generic [ref=e465]:
+                      - button "٩:٠٠ ص" [ref=e466] [cursor=pointer]
+                      - button "٩:٣٠ ص" [ref=e467] [cursor=pointer]
+                      - button "١٠:٠٠ ص" [ref=e468] [cursor=pointer]
+                      - button "١٠:٣٠ ص" [ref=e469] [cursor=pointer]
+                      - button "١١:٠٠ ص" [ref=e470] [cursor=pointer]
+                      - button "١١:٣٠ ص" [ref=e471] [cursor=pointer]
+                  - generic [ref=e472]:
+                    - generic [ref=e473]: بعد الظهر والمساء
+                    - generic [ref=e474]:
+                      - button "٢:٠٠ م" [ref=e475] [cursor=pointer]
+                      - button "٣:٠٠ م" [ref=e476] [cursor=pointer]
+                      - button "٤:٠٠ م" [ref=e477] [cursor=pointer]
+                      - button "٤:٣٠ م" [ref=e478] [cursor=pointer]
+                      - button "٥:٠٠ م" [ref=e479] [cursor=pointer]
+                      - button "٦:٠٠ م" [ref=e480] [cursor=pointer]
+                      - button "٨:٠٠ م" [ref=e481] [cursor=pointer]
+                      - button "١٠:٠٠ م" [ref=e482] [cursor=pointer]
+                - generic [ref=e483]:
+                  - generic:
+                    - generic: المختار
+                    - generic: الثلاثاء, أبريل 21 · ٩:٠٠ ص
+                  - link "احجز" [ref=e484] [cursor=pointer]:
+                    - /url: /auth/login
+            - generic [ref=e485]:
+              - generic [ref=e486]:
+                - link "Photo of Dr. Amr Hassan Dr. Amr Hassan جراح عظام · مستشفى كليوباترا 5.0 · 15 سنة خبرة استبدال مفصل منظار مفصل علاج كسور إصابات رياضية" [ref=e487] [cursor=pointer]:
+                  - /url: /doctors/4
+                  - img "Photo of Dr. Amr Hassan" [ref=e488]
+                  - generic [ref=e489]:
+                    - generic [ref=e490]: Dr. Amr Hassan
+                    - generic [ref=e491]: جراح عظام · مستشفى كليوباترا
+                    - generic [ref=e492]:
+                      - generic [ref=e493]:
+                        - img [ref=e494]
+                        - img [ref=e496]
+                        - img [ref=e498]
+                        - img [ref=e500]
+                        - img [ref=e502]
+                      - generic [ref=e504]: 5.0 · 15 سنة خبرة
+                    - generic [ref=e505]:
+                      - generic [ref=e506]: استبدال مفصل
+                      - generic [ref=e507]: منظار مفصل
+                      - generic [ref=e508]: علاج كسور
+                      - generic [ref=e509]: إصابات رياضية
+                - generic [ref=e510]:
+                  - generic [ref=e511]:
+                    - generic [ref=e512]: متاح اليوم
+                    - generic [ref=e513]:
+                      - img [ref=e514]
+                      - text: متابعة
+                  - generic [ref=e517]:
+                    - generic [ref=e518]: 450 EGP
+                    - generic [ref=e519]: للزيارة
+              - generic [ref=e520]:
+                - generic [ref=e521]: اختر موعداً
+                - generic [ref=e522]:
+                  - generic [ref=e523]:
+                    - generic [ref=e524]: الشهر
+                    - generic [ref=e525]:
+                      - button "السابق" [ref=e526] [cursor=pointer]:
+                        - img [ref=e527]
+                      - generic:
+                        - button "أبريل" [ref=e529] [cursor=pointer]
+                        - button "مايو" [ref=e530] [cursor=pointer]
+                        - button "يونيو" [ref=e531] [cursor=pointer]
+                        - button "يوليو" [ref=e532] [cursor=pointer]
+                        - button "أغسطس" [ref=e533] [cursor=pointer]
+                        - button "سبتمبر" [ref=e534] [cursor=pointer]
+                      - button "التالي" [ref=e535] [cursor=pointer]:
+                        - img [ref=e536]
+                  - generic [ref=e538]:
+                    - generic [ref=e539]: اليوم
+                    - generic [ref=e540]:
+                      - button "السابق" [ref=e541] [cursor=pointer]:
+                        - img [ref=e542]
+                      - generic:
+                        - button "الثلاثاء 21" [ref=e544] [cursor=pointer]:
+                          - generic [ref=e545]: الثلاثاء
+                          - generic [ref=e546]: "21"
+                        - button "الأربعاء 22" [ref=e547] [cursor=pointer]:
+                          - generic [ref=e548]: الأربعاء
+                          - generic [ref=e549]: "22"
+                        - button "الخميس 23" [ref=e550] [cursor=pointer]:
+                          - generic [ref=e551]: الخميس
+                          - generic [ref=e552]: "23"
+                        - button "الجمعة 24" [ref=e553] [cursor=pointer]:
+                          - generic [ref=e554]: الجمعة
+                          - generic [ref=e555]: "24"
+                        - button "السبت 25" [ref=e556] [cursor=pointer]:
+                          - generic [ref=e557]: السبت
+                          - generic [ref=e558]: "25"
+                        - button "الأحد 26" [ref=e559] [cursor=pointer]:
+                          - generic [ref=e560]: الأحد
+                          - generic [ref=e561]: "26"
+                        - button "الاثنين 27" [ref=e562] [cursor=pointer]:
+                          - generic [ref=e563]: الاثنين
+                          - generic [ref=e564]: "27"
+                        - button "الثلاثاء 28" [ref=e565] [cursor=pointer]:
+                          - generic [ref=e566]: الثلاثاء
+                          - generic [ref=e567]: "28"
+                        - button "الأربعاء 29" [ref=e568] [cursor=pointer]:
+                          - generic [ref=e569]: الأربعاء
+                          - generic [ref=e570]: "29"
+                        - button "الخميس 30" [ref=e571] [cursor=pointer]:
+                          - generic [ref=e572]: الخميس
+                          - generic [ref=e573]: "30"
+                      - button "التالي" [ref=e574] [cursor=pointer]:
+                        - img [ref=e575]
+                  - generic [ref=e577]:
+                    - generic [ref=e578]: الصباح
+                    - generic [ref=e579]:
+                      - button "٩:٠٠ ص" [ref=e580] [cursor=pointer]
+                      - button "٩:٣٠ ص" [ref=e581] [cursor=pointer]
+                      - button "١٠:٠٠ ص" [ref=e582] [cursor=pointer]
+                      - button "١٠:٣٠ ص" [ref=e583] [cursor=pointer]
+                      - button "١١:٠٠ ص" [ref=e584] [cursor=pointer]
+                      - button "١١:٣٠ ص" [ref=e585] [cursor=pointer]
+                  - generic [ref=e586]:
+                    - generic [ref=e587]: بعد الظهر والمساء
+                    - generic [ref=e588]:
+                      - button "٢:٠٠ م" [ref=e589] [cursor=pointer]
+                      - button "٣:٠٠ م" [ref=e590] [cursor=pointer]
+                      - button "٤:٠٠ م" [ref=e591] [cursor=pointer]
+                      - button "٤:٣٠ م" [ref=e592] [cursor=pointer]
+                      - button "٥:٠٠ م" [ref=e593] [cursor=pointer]
+                      - button "٦:٠٠ م" [ref=e594] [cursor=pointer]
+                      - button "٨:٠٠ م" [ref=e595] [cursor=pointer]
+                      - button "١٠:٠٠ م" [ref=e596] [cursor=pointer]
+                - generic [ref=e597]:
+                  - generic:
+                    - generic: المختار
+                    - generic: الثلاثاء, أبريل 21 · ٩:٠٠ ص
+                  - link "احجز" [ref=e598] [cursor=pointer]:
+                    - /url: /auth/login
+          - generic [ref=e599]:
+            - button [disabled] [ref=e600]:
+              - img [ref=e601]
+            - button "1" [ref=e603] [cursor=pointer]
+            - button "2" [ref=e604] [cursor=pointer]
+            - button "3" [ref=e605] [cursor=pointer]
+            - button "4" [ref=e606] [cursor=pointer]
+            - button "5" [ref=e607] [cursor=pointer]
+            - button "6" [ref=e608] [cursor=pointer]
+            - button [ref=e609] [cursor=pointer]:
+              - img [ref=e610]
+  - generic:
+    - img
+  - generic [ref=e612]:
+    - button "Toggle Nuxt DevTools" [ref=e613] [cursor=pointer]:
+      - img [ref=e614]
+    - generic "Page load time" [ref=e617]:
+      - generic [ref=e618]: "18"
+      - generic [ref=e619]: ms
+    - button "Toggle Component Inspector" [ref=e621] [cursor=pointer]:
+      - img [ref=e622]

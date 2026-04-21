@@ -1,0 +1,84 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - status [ref=e4]: إدارة قائمة الانتظار — ٣علاجي
+    - main [ref=e6]:
+      - generic [ref=e7]:
+        - generic [ref=e8]:
+          - generic [ref=e9]:
+            - heading "إدارة قائمة الانتظار" [level=1] [ref=e10]
+            - paragraph [ref=e11]: اليوم — الثلاثاء، ٢١ أبريل
+          - button "فتح شاشة غرفة الانتظار" [ref=e12] [cursor=pointer]
+        - generic [ref=e13]:
+          - generic [ref=e14]:
+            - generic [ref=e15]:
+              - generic [ref=e16]:
+                - generic [ref=e17]: يُستقبل الآن
+                - generic [ref=e18]: "#2"
+              - generic [ref=e19]:
+                - img [ref=e21]
+                - generic [ref=e24]:
+                  - generic [ref=e25]: Khaled Ibrahim
+                  - generic [ref=e26]: "الموعد: 09:30 AM"
+              - button "استدعاء المريض التالي" [ref=e27] [cursor=pointer]
+            - generic [ref=e28]:
+              - generic [ref=e29]: القائمة (6)
+              - generic [ref=e30]:
+                - generic [ref=e31]:
+                  - generic [ref=e32]: "1"
+                  - generic [ref=e33]:
+                    - generic [ref=e34]: Sara Mohamed
+                    - generic [ref=e35]: 09:00 AM
+                  - generic [ref=e36]: مكتمل
+                - generic [ref=e37]:
+                  - generic [ref=e38]: "2"
+                  - generic [ref=e39]:
+                    - generic [ref=e40]: Khaled Ibrahim
+                    - generic [ref=e41]: 09:30 AM
+                  - generic [ref=e42]: جاري
+                - generic [ref=e43]:
+                  - generic [ref=e44]: "3"
+                  - generic [ref=e45]:
+                    - generic [ref=e46]: Nour Elsayed
+                    - generic [ref=e47]: 10:00 AM
+                  - generic [ref=e48]: منتظر
+                - generic [ref=e49]:
+                  - generic [ref=e50]: "4"
+                  - generic [ref=e51]:
+                    - generic [ref=e52]: Ahmed Tawfik
+                    - generic [ref=e53]: 10:30 AM
+                  - generic [ref=e54]: منتظر
+                - generic [ref=e55]:
+                  - generic [ref=e56]: "5"
+                  - generic [ref=e57]:
+                    - generic [ref=e58]: Mona Farouk
+                    - generic [ref=e59]: 11:00 AM
+                  - generic [ref=e60]: متخطى
+                - generic [ref=e61]:
+                  - generic [ref=e62]: "6"
+                  - generic [ref=e63]:
+                    - generic [ref=e64]: Omar Adel
+                    - generic [ref=e65]: 11:30 AM
+                  - generic [ref=e66]: منتظر
+          - complementary [ref=e67]:
+            - generic [ref=e69]:
+              - generic [ref=e70]: "6"
+              - generic [ref=e71]: الإجمالي
+            - generic [ref=e73]:
+              - generic [ref=e74]: "3"
+              - generic [ref=e75]: منتظر
+            - generic [ref=e77]:
+              - generic [ref=e78]: "1"
+              - generic [ref=e79]: مكتمل
+            - generic [ref=e81]:
+              - generic [ref=e82]: "1"
+              - generic [ref=e83]: تم تخطيه
+  - generic:
+    - img
+  - generic [ref=e84]:
+    - button "Toggle Nuxt DevTools" [ref=e85] [cursor=pointer]:
+      - img [ref=e86]
+    - generic "Page load time" [ref=e89]:
+      - generic [ref=e90]: "7"
+      - generic [ref=e91]: ms
+    - button "Toggle Component Inspector" [ref=e93] [cursor=pointer]:
+      - img [ref=e94]

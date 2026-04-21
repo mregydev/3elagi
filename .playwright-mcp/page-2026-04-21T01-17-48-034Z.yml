@@ -1,0 +1,35 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - status [ref=e4]: إعداد ملفك الصحي — ٣علاجي
+    - generic [ref=e9]:
+      - img "3elagi" [ref=e10]:
+        - generic [ref=e18]: 3elagi
+      - generic [ref=e19]:
+        - heading "مرحباً، سارة 👋" [level=1] [ref=e20]
+        - paragraph [ref=e21]: لنُعد ملفك الصحي لنوصلك بالأطباء المناسبين.
+      - generic [ref=e22]:
+        - paragraph [ref=e23]: "ما سنغطيه:"
+        - generic [ref=e24]:
+          - generic [ref=e25]: 🧍
+          - generic [ref=e26]: البيانات الشخصية الأساسية
+        - generic [ref=e27]:
+          - generic [ref=e28]: 🏥
+          - generic [ref=e29]: التاريخ المرضي والحالات
+        - generic [ref=e30]:
+          - generic [ref=e31]: 💊
+          - generic [ref=e32]: الأدوية الحالية والحساسية
+        - generic [ref=e33]:
+          - generic [ref=e34]: 🪪
+          - generic [ref=e35]: التأمين والمستندات
+      - paragraph [ref=e36]: يستغرق حوالي ٣ دقائق
+      - button "ابدأ ←" [ref=e37] [cursor=pointer]
+  - generic:
+    - img
+  - generic [ref=e38]:
+    - button "Toggle Nuxt DevTools" [ref=e39] [cursor=pointer]:
+      - img [ref=e40]
+    - generic "Page load time" [ref=e43]:
+      - generic [ref=e44]: "5"
+      - generic [ref=e45]: ms
+    - button "Toggle Component Inspector" [ref=e47] [cursor=pointer]:
+      - img [ref=e48]

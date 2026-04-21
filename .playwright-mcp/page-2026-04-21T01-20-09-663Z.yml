@@ -1,0 +1,53 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - status [ref=e4]: إنشاء حساب — ٣علاجي
+    - generic [ref=e6]:
+      - img "3elagi" [ref=e8]:
+        - generic [ref=e16]: 3elagi
+      - generic [ref=e17]:
+        - link "تسجيل الدخول" [ref=e18] [cursor=pointer]:
+          - /url: /auth/login
+        - link "إنشاء حساب" [ref=e19] [cursor=pointer]:
+          - /url: /auth/signup
+      - generic [ref=e20]:
+        - generic [ref=e21]:
+          - generic [ref=e22]: أنا…
+          - generic [ref=e23]:
+            - button "مريض" [ref=e24] [cursor=pointer]:
+              - img [ref=e25]
+              - generic [ref=e28]: مريض
+            - button "طبيب" [ref=e29] [cursor=pointer]:
+              - img [ref=e30]
+              - generic [ref=e34]: طبيب
+        - generic [ref=e35]:
+          - generic [ref=e36]: الاسم الكامل
+          - textbox "الاسم الكامل" [ref=e37]:
+            - /placeholder: اسمك الكامل
+        - generic [ref=e38]:
+          - generic [ref=e39]: البريد الإلكتروني
+          - textbox "البريد الإلكتروني" [ref=e40]:
+            - /placeholder: you@example.com
+        - generic [ref=e41]:
+          - generic [ref=e42]: كلمة المرور
+          - textbox "كلمة المرور" [ref=e43]:
+            - /placeholder: ••••••••
+        - generic [ref=e44]:
+          - generic [ref=e45]: الهاتف
+          - textbox "الهاتف" [ref=e46]:
+            - /placeholder: +20 1XX XXX XXXX
+        - generic [ref=e47]:
+          - button "إنشاء حساب" [ref=e48] [cursor=pointer]
+          - paragraph [ref=e49]:
+            - text: لديك حساب بالفعل؟
+            - link "تسجيل الدخول" [ref=e50] [cursor=pointer]:
+              - /url: /auth/login
+  - generic:
+    - img
+  - generic [ref=e51]:
+    - button "Toggle Nuxt DevTools" [ref=e52] [cursor=pointer]:
+      - img [ref=e53]
+    - generic "Page load time" [ref=e56]:
+      - generic [ref=e57]: "10"
+      - generic [ref=e58]: ms
+    - button "Toggle Component Inspector" [ref=e60] [cursor=pointer]:
+      - img [ref=e61]

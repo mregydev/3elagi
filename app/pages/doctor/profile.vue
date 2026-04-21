@@ -260,4 +260,20 @@ const stateVariant: Record<DocStatus['state'], 'default' | 'secondary' | 'destru
   align-items: center;
 }
 .doc-label { font-size: 13px; font-weight: 600; color: var(--ink); }
+
+/* Mobile */
+@media (max-width: 767px) {
+  .main-inner { padding: 20px 16px; }
+
+  .page-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .grid { grid-template-columns: 1fr; }
+
+  .form-grid { grid-template-columns: 1fr; }
+  .field.full { grid-column: 1; }
+}
 </style>

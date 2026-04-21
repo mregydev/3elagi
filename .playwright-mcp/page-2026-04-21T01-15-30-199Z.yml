@@ -1,0 +1,65 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - status [ref=e4]: إنشاء حساب — ٣علاجي
+    - generic [ref=e6]:
+      - generic [ref=e7]:
+        - generic [ref=e8]:
+          - img "3elagi" [ref=e9]:
+            - generic [ref=e17]: 3elagi
+          - heading "انضم إلى ٣علاجي اليوم." [level=1] [ref=e18]
+          - paragraph [ref=e19]: تواصل مع المرضى أو اعثر على الطبيب المناسب.
+        - generic [ref=e20]:
+          - generic [ref=e21]:
+            - img [ref=e23]
+            - generic [ref=e25]: أطباء موثوقون في أكثر من ٢٠ تخصصاً
+          - generic [ref=e26]:
+            - img [ref=e28]
+            - generic [ref=e30]: حجز فوري بلا انتظار
+          - generic [ref=e31]:
+            - img [ref=e33]
+            - generic [ref=e35]: تذكير ومتابعات مدمجة
+      - generic [ref=e36]:
+        - generic [ref=e37]:
+          - link "تسجيل الدخول" [ref=e38] [cursor=pointer]:
+            - /url: /auth/login
+          - link "إنشاء حساب" [ref=e39] [cursor=pointer]:
+            - /url: /auth/signup
+        - heading "أنشئ حسابك" [level=2] [ref=e40]
+        - generic [ref=e41]:
+          - generic [ref=e42]: أنا…
+          - generic [ref=e43]:
+            - button "مريض" [ref=e44] [cursor=pointer]
+            - button "طبيب" [ref=e45] [cursor=pointer]
+        - generic [ref=e46]:
+          - generic [ref=e47]:
+            - generic [ref=e48]: الاسم الكامل
+            - textbox "الاسم الكامل" [ref=e49]:
+              - /placeholder: اسمك الكامل
+          - generic [ref=e50]:
+            - generic [ref=e51]: عنوان البريد الإلكتروني
+            - textbox "عنوان البريد الإلكتروني" [ref=e52]:
+              - /placeholder: you@example.com
+          - generic [ref=e53]:
+            - generic [ref=e54]: كلمة المرور
+            - textbox "كلمة المرور" [ref=e55]:
+              - /placeholder: ••••••••
+          - generic [ref=e56]:
+            - generic [ref=e57]: الهاتف
+            - textbox "الهاتف" [ref=e58]:
+              - /placeholder: +20 1XX XXX XXXX
+        - generic [ref=e59]:
+          - button "إنشاء حساب" [ref=e60] [cursor=pointer]
+          - paragraph [ref=e61]:
+            - text: لديك حساب بالفعل؟
+            - link "تسجيل الدخول" [ref=e62] [cursor=pointer]:
+              - /url: /auth/login
+  - generic:
+    - img
+  - generic [ref=e63]:
+    - button "Toggle Nuxt DevTools" [ref=e64] [cursor=pointer]:
+      - img [ref=e65]
+    - generic "Page load time" [ref=e68]:
+      - generic [ref=e69]: "10"
+      - generic [ref=e70]: ms
+    - button "Toggle Component Inspector" [ref=e72] [cursor=pointer]:
+      - img [ref=e73]

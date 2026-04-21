@@ -1,0 +1,69 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - status [ref=e4]: توثيق الطبيب — ٣علاجي
+    - generic [ref=e6]:
+      - generic [ref=e7]:
+        - link "3elagi" [ref=e8] [cursor=pointer]:
+          - /url: /
+          - img "3elagi" [ref=e9]:
+            - generic [ref=e17]: 3elagi
+        - generic [ref=e21]: الخطوة ٤ من ٥
+      - generic [ref=e22]:
+        - generic [ref=e23]: التحقق من المستندات
+        - generic [ref=e24]: ارفع المستندات المطلوبة لتوثيق بياناتك.
+        - generic [ref=e25]:
+          - generic [ref=e26]: ⚠️
+          - generic [ref=e27]: تم رفض مستند أو أكثر. يُرجى إعادة رفع المستندات المحددة.
+        - generic [ref=e28]:
+          - generic [ref=e30]:
+            - generic [ref=e31]:
+              - generic [ref=e32]: ترخيص مزاولة المهنة
+              - generic [ref=e33]: PDF أو صورة، حتى ٥ ميجابايت
+            - generic [ref=e34]:
+              - generic [ref=e35]: ✅
+              - generic [ref=e36]: تم الرفع
+          - generic [ref=e38]:
+            - generic [ref=e39]:
+              - generic [ref=e40]: الرقم القومي
+              - generic [ref=e41]: الوجه والظهر
+            - generic [ref=e42]:
+              - generic [ref=e43]: 🔍
+              - generic [ref=e44]: قيد المراجعة
+          - generic [ref=e45]:
+            - generic [ref=e46]:
+              - generic [ref=e47]:
+                - generic [ref=e48]: شهادة التخصص
+                - generic [ref=e49]: البورد
+                - generic [ref=e50]: "السبب: المستند غير واضح، يُرجى إعادة الرفع."
+              - generic [ref=e51]:
+                - generic [ref=e52]: ❌
+                - generic [ref=e53]: مرفوض
+            - generic [ref=e55] [cursor=pointer]:
+              - generic [ref=e56]: 📎
+              - generic [ref=e57]: إعادة رفع المستند
+          - generic [ref=e58]:
+            - generic [ref=e59]:
+              - generic [ref=e60]:
+                - generic [ref=e61]: صورة مهنية
+                - generic [ref=e62]: صورة واضحة للوجه
+              - generic [ref=e63]:
+                - generic [ref=e64]: ⬜
+                - generic [ref=e65]: غير مرفوع
+            - generic [ref=e67] [cursor=pointer]:
+              - generic [ref=e68]: 📎
+              - generic [ref=e69]: رفع المستند
+      - generic [ref=e70]:
+        - link "رجوع" [ref=e71] [cursor=pointer]:
+          - /url: /doctor/onboarding/step3
+        - link "متابعة" [ref=e72] [cursor=pointer]:
+          - /url: /doctor/onboarding/step5
+  - generic:
+    - img
+  - generic [ref=e73]:
+    - button "Toggle Nuxt DevTools" [ref=e74] [cursor=pointer]:
+      - img [ref=e75]
+    - generic "Page load time" [ref=e78]:
+      - generic [ref=e79]: "9"
+      - generic [ref=e80]: ms
+    - button "Toggle Component Inspector" [ref=e82] [cursor=pointer]:
+      - img [ref=e83]

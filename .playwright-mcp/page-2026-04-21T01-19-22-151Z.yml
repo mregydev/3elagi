@@ -1,0 +1,267 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - status [ref=e4]: ملف الطبيب — ٣علاجي
+    - generic [ref=e6]:
+      - banner [ref=e7]:
+        - link "3elagi" [ref=e8] [cursor=pointer]:
+          - /url: /
+          - img "3elagi" [ref=e9]:
+            - generic [ref=e17]: 3elagi
+        - navigation [ref=e18]:
+          - link "ابحث عن طبيب" [ref=e19] [cursor=pointer]:
+            - /url: /
+          - link "التخصصات" [ref=e20] [cursor=pointer]:
+            - /url: /specialties
+          - link "كيف يعمل" [ref=e21] [cursor=pointer]:
+            - /url: /how-it-works
+        - generic [ref=e22]:
+          - button "اختر اللغة" [ref=e24] [cursor=pointer]:
+            - generic [ref=e26]: AR
+          - link "تسجيل الدخول" [ref=e27] [cursor=pointer]:
+            - /url: /auth/login
+          - link "إنشاء حساب" [ref=e28] [cursor=pointer]:
+            - /url: /auth/signup
+      - generic [ref=e29]:
+        - generic [ref=e30]:
+          - generic [ref=e31]:
+            - generic [ref=e32]:
+              - img "Dr. Sara Ahmed" [ref=e33]
+              - generic [ref=e34]:
+                - generic [ref=e35]: Dr. Sara Ahmed
+                - generic [ref=e36]: أخصائي قلب · مستشفى عين شمس
+                - generic [ref=e37]:
+                  - generic [ref=e38]:
+                    - img [ref=e39]
+                    - img [ref=e41]
+                    - img [ref=e43]
+                    - img [ref=e45]
+                    - img [ref=e47]
+                  - generic [ref=e49]: 5.0 · 128 مراجعة
+            - generic [ref=e50]:
+              - generic [ref=e51]:
+                - generic [ref=e52]:
+                  - generic [ref=e53]: "12"
+                  - generic [ref=e54]: الخبرة
+                - generic [ref=e55]:
+                  - generic [ref=e56]: 1,200+
+                  - generic [ref=e57]: المرضى
+                - generic [ref=e58]:
+                  - generic [ref=e59]: "5.0"
+                  - generic [ref=e60]: التقييم
+              - paragraph [ref=e61]: أخصائية قلب معتمدة في مستشفى عين شمس. متخصصة في أمراض القلب الوقائية والموجات الصوتية للقلب مع أكثر من ١٢ عاماً من الخبرة. تتحدث العربية والإنجليزية بطلاقة.
+              - generic [ref=e63]:
+                - generic [ref=e64]: متاح اليوم
+                - generic [ref=e65]: استشارة عن بُعد
+                - generic [ref=e66]: متابعة
+              - generic [ref=e67]:
+                - generic [ref=e68]:
+                  - generic [ref=e69]: رسوم الكشف
+                  - generic [ref=e70]: 350 EGP
+                - generic [ref=e71]:
+                  - generic [ref=e72]: العربية
+                  - generic [ref=e73]: الإنجليزية
+          - generic [ref=e85]:
+            - img [ref=e86]
+            - generic [ref=e89]:
+              - generic [ref=e90]: مستشفى عين شمس
+              - generic [ref=e91]: العباسية، القاهرة · على بُعد ~٤٫٢ كم
+            - button "احصل على الاتجاهات" [ref=e92] [cursor=pointer]
+        - generic [ref=e93]:
+          - generic [ref=e94]: اختر موعداً
+          - generic [ref=e95]:
+            - generic [ref=e96]:
+              - generic [ref=e97]: الشهر
+              - generic [ref=e98]:
+                - button "السابق" [ref=e99] [cursor=pointer]:
+                  - img [ref=e100]
+                - generic [ref=e102]:
+                  - button "أبريل" [ref=e103] [cursor=pointer]
+                  - button "مايو" [ref=e104] [cursor=pointer]
+                  - button "يونيو" [ref=e105] [cursor=pointer]
+                  - button "يوليو" [ref=e106] [cursor=pointer]
+                  - button "أغسطس" [ref=e107] [cursor=pointer]
+                  - button "سبتمبر" [ref=e108] [cursor=pointer]
+                - button "التالي" [ref=e109] [cursor=pointer]:
+                  - img [ref=e110]
+            - generic [ref=e112]:
+              - generic [ref=e113]: اليوم
+              - generic [ref=e114]:
+                - button "السابق" [ref=e115] [cursor=pointer]:
+                  - img [ref=e116]
+                - generic [ref=e118]:
+                  - button "الثلاثاء 21" [ref=e119] [cursor=pointer]:
+                    - generic [ref=e120]: الثلاثاء
+                    - generic [ref=e121]: "21"
+                  - button "الأربعاء 22" [ref=e122] [cursor=pointer]:
+                    - generic [ref=e123]: الأربعاء
+                    - generic [ref=e124]: "22"
+                  - button "الخميس 23" [ref=e125] [cursor=pointer]:
+                    - generic [ref=e126]: الخميس
+                    - generic [ref=e127]: "23"
+                  - button "الجمعة 24" [ref=e128] [cursor=pointer]:
+                    - generic [ref=e129]: الجمعة
+                    - generic [ref=e130]: "24"
+                  - button "السبت 25" [ref=e131] [cursor=pointer]:
+                    - generic [ref=e132]: السبت
+                    - generic [ref=e133]: "25"
+                  - button "الأحد 26" [ref=e134] [cursor=pointer]:
+                    - generic [ref=e135]: الأحد
+                    - generic [ref=e136]: "26"
+                  - button "الاثنين 27" [ref=e137] [cursor=pointer]:
+                    - generic [ref=e138]: الاثنين
+                    - generic [ref=e139]: "27"
+                  - button "الثلاثاء 28" [ref=e140] [cursor=pointer]:
+                    - generic [ref=e141]: الثلاثاء
+                    - generic [ref=e142]: "28"
+                  - button "الأربعاء 29" [ref=e143] [cursor=pointer]:
+                    - generic [ref=e144]: الأربعاء
+                    - generic [ref=e145]: "29"
+                  - button "الخميس 30" [ref=e146] [cursor=pointer]:
+                    - generic [ref=e147]: الخميس
+                    - generic [ref=e148]: "30"
+                - button "التالي" [ref=e149] [cursor=pointer]:
+                  - img [ref=e150]
+            - generic [ref=e152]:
+              - generic [ref=e153]: الصباح
+              - generic [ref=e154]:
+                - button "٩:٠٠ ص" [ref=e155] [cursor=pointer]
+                - button "٩:٣٠ ص" [ref=e156] [cursor=pointer]
+                - button "١٠:٠٠ ص" [ref=e157] [cursor=pointer]
+                - button "١٠:٣٠ ص" [ref=e158] [cursor=pointer]
+                - button "١١:٠٠ ص" [ref=e159] [cursor=pointer]
+                - button "١١:٣٠ ص" [ref=e160] [cursor=pointer]
+            - generic [ref=e161]:
+              - generic [ref=e162]: بعد الظهر والمساء
+              - generic [ref=e163]:
+                - button "٢:٠٠ م" [ref=e164] [cursor=pointer]
+                - button "٣:٠٠ م" [ref=e165] [cursor=pointer]
+                - button "٤:٠٠ م" [ref=e166] [cursor=pointer]
+                - button "٤:٣٠ م" [ref=e167] [cursor=pointer]
+                - button "٥:٠٠ م" [ref=e168] [cursor=pointer]
+                - button "٦:٠٠ م" [ref=e169] [cursor=pointer]
+                - button "٨:٠٠ م" [ref=e170] [cursor=pointer]
+                - button "١٠:٠٠ م" [ref=e171] [cursor=pointer]
+        - generic [ref=e172]:
+          - generic [ref=e173]:
+            - generic [ref=e174]: آراء المرضى
+            - generic [ref=e175] [cursor=pointer]: ١٢٨ مراجعة ←
+          - generic [ref=e176]:
+            - button [ref=e177] [cursor=pointer]:
+              - img [ref=e178]
+            - generic [ref=e180]:
+              - generic [ref=e181]:
+                - generic [ref=e182]:
+                  - img "أحمد م." [ref=e183]
+                  - generic [ref=e184]:
+                    - generic [ref=e185]: أحمد م.
+                    - generic [ref=e186]: مارس ٢٠٢٥
+                  - generic [ref=e187]:
+                    - img [ref=e188]
+                    - img [ref=e190]
+                    - img [ref=e192]
+                    - img [ref=e194]
+                    - img [ref=e196]
+                - paragraph [ref=e198]: طبيبة ممتازة، دقيقة ومهنية. شرحت حالتي بالتفصيل. أنصح بها بشدة.
+              - generic [ref=e199]:
+                - generic [ref=e200]:
+                  - img "سارة ك." [ref=e201]
+                  - generic [ref=e202]:
+                    - generic [ref=e203]: سارة ك.
+                    - generic [ref=e204]: فبراير ٢٠٢٥
+                  - generic [ref=e205]:
+                    - img [ref=e206]
+                    - img [ref=e208]
+                    - img [ref=e210]
+                    - img [ref=e212]
+                    - img [ref=e214]
+                - paragraph [ref=e216]: تجربة رائعة بشكل عام. وقت انتظار قليل وشرح واضح لخطة العلاج.
+              - generic [ref=e217]:
+                - generic [ref=e218]:
+                  - img "عمر ف." [ref=e219]
+                  - generic [ref=e220]:
+                    - generic [ref=e221]: عمر ف.
+                    - generic [ref=e222]: يناير ٢٠٢٥
+                  - generic [ref=e223]:
+                    - img [ref=e224]
+                    - img [ref=e226]
+                    - img [ref=e228]
+                    - img [ref=e230]
+                    - img [ref=e232]
+                - paragraph [ref=e234]: الدكتورة سارة على دراية واسعة وتأخذ وقتاً لشرح كل شيء. أفضل أخصائي قلب زرته.
+              - generic [ref=e235]:
+                - generic [ref=e236]:
+                  - img "ليلى ح." [ref=e237]
+                  - generic [ref=e238]:
+                    - generic [ref=e239]: ليلى ح.
+                    - generic [ref=e240]: ديسمبر ٢٠٢٤
+                  - generic [ref=e241]:
+                    - img [ref=e242]
+                    - img [ref=e244]
+                    - img [ref=e246]
+                    - img [ref=e248]
+                    - img [ref=e250]
+                - paragraph [ref=e252]: مهنية ومهتمة. العيادة نظيفة والطاقم ودود. سأعود بالتأكيد.
+              - generic [ref=e253]:
+                - generic [ref=e254]:
+                  - img "كريم ن." [ref=e255]
+                  - generic [ref=e256]:
+                    - generic [ref=e257]: كريم ن.
+                    - generic [ref=e258]: نوفمبر ٢٠٢٤
+                  - generic [ref=e259]:
+                    - img [ref=e260]
+                    - img [ref=e262]
+                    - img [ref=e264]
+                    - img [ref=e266]
+                    - img [ref=e268]
+                - paragraph [ref=e270]: طبيب جيد بخبرة قوية. وقت الانتظار كان طويلاً قليلاً لكن جودة الكشف ممتازة.
+            - button [ref=e271] [cursor=pointer]:
+              - img [ref=e272]
+        - generic [ref=e274]:
+          - generic [ref=e275]: الأسئلة الشائعة
+          - generic [ref=e276]:
+            - generic [ref=e277] [cursor=pointer]:
+              - generic [ref=e278]:
+                - generic [ref=e279]: هل تقبل الدكتورة سارة مرضى جدد؟
+                - img [ref=e280]
+              - paragraph [ref=e282]: نعم، الدكتورة سارة تقبل مرضى جدد حالياً. يمكنك حجز أول موعد عبر المنصة مباشرة.
+            - generic [ref=e283] [cursor=pointer]:
+              - generic [ref=e284]:
+                - generic [ref=e285]: ما خطط التأمين المقبولة؟
+                - img [ref=e286]
+              - paragraph [ref=e288]: تقبل الدكتورة سارة معظم خطط التأمين الكبرى بما فيها Allianz وAXA وMetLife وتأمين بنك القاهرة عمان الصحي. يُرجى التأكد مع العيادة قبل الزيارة.
+            - generic [ref=e289] [cursor=pointer]:
+              - generic [ref=e290]:
+                - generic [ref=e291]: هل الاستشارة عن بُعد متاحة للزيارة الأولى؟
+                - img [ref=e292]
+              - paragraph [ref=e294]: الاستشارة عن بُعد متاحة لمتابعة الحالات التي لا تتطلب فحصاً سريرياً. الزيارة الأولى لحالات جديدة تتطلب عادة حضوراً في العيادة.
+            - generic [ref=e295] [cursor=pointer]:
+              - generic [ref=e296]:
+                - generic [ref=e297]: كم تستغرق المواعيد عادة؟
+                - img [ref=e298]
+              - paragraph [ref=e300]: الكشف المعتاد حوالي ٢٠–٣٠ دقيقة. التقييمات القلبية الشاملة قد تستغرق حتى ٦٠ دقيقة.
+            - generic [ref=e301] [cursor=pointer]:
+              - generic [ref=e302]:
+                - generic [ref=e303]: هل يمكن الحصول على روشتة عبر الإنترنت؟
+                - img [ref=e304]
+              - paragraph [ref=e306]: نعم، للمرضى المتابعين يمكن للدكتورة سارة تجديد الروشتة عبر منصة الاستشارة عن بُعد.
+            - generic [ref=e307] [cursor=pointer]:
+              - generic [ref=e308]:
+                - generic [ref=e309]: ما اللغات التي يتحدث بها الطبيب؟
+                - img [ref=e310]
+              - paragraph [ref=e312]: الدكتورة سارة تتحدث العربية والإنجليزية بطلاقة وتجري الاستشارات بأي منهما حسب تفضيل المريض.
+        - generic [ref=e313]:
+          - generic [ref=e314]:
+            - generic [ref=e315]: "المختار: الثلاثاء, أبريل 21 · ٩:٠٠ ص"
+            - generic [ref=e316]: 350 EGP
+          - link "تأكيد الحجز" [ref=e317] [cursor=pointer]:
+            - /url: /auth/login
+  - generic:
+    - img
+  - generic [ref=e318]:
+    - button "Toggle Nuxt DevTools" [ref=e319] [cursor=pointer]:
+      - img [ref=e320]
+    - generic "Page load time" [ref=e323]:
+      - generic [ref=e324]: "14"
+      - generic [ref=e325]: ms
+    - button "Toggle Component Inspector" [ref=e327] [cursor=pointer]:
+      - img [ref=e328]

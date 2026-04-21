@@ -1,0 +1,55 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - status [ref=e4]: تسجيل الدخول — ٣علاجي
+    - generic [ref=e6]:
+      - generic [ref=e7]:
+        - generic [ref=e8]:
+          - img "3elagi" [ref=e9]:
+            - generic [ref=e17]: 3elagi
+          - heading "مرحباً بعودتك." [level=1] [ref=e18]
+          - paragraph [ref=e19]: احجز مواعيد مع أفضل الأطباء في دقائق.
+        - generic [ref=e20]:
+          - generic [ref=e21]:
+            - img [ref=e23]
+            - generic [ref=e25]: أطباء موثوقون في أكثر من ٢٠ تخصصاً
+          - generic [ref=e26]:
+            - img [ref=e28]
+            - generic [ref=e30]: حجز فوري بلا انتظار
+          - generic [ref=e31]:
+            - img [ref=e33]
+            - generic [ref=e35]: تذكير ومتابعات مدمجة
+      - generic [ref=e36]:
+        - generic [ref=e37]:
+          - link "تسجيل الدخول" [ref=e38] [cursor=pointer]:
+            - /url: /auth/login
+          - link "إنشاء حساب" [ref=e39] [cursor=pointer]:
+            - /url: /auth/signup
+        - heading "سجّل الدخول إلى حسابك" [level=2] [ref=e40]
+        - generic [ref=e41]:
+          - generic [ref=e42]:
+            - generic [ref=e43]: عنوان البريد الإلكتروني
+            - textbox "عنوان البريد الإلكتروني" [ref=e44]:
+              - /placeholder: you@example.com
+          - generic [ref=e45]:
+            - generic [ref=e46]:
+              - generic [ref=e47]: كلمة المرور
+              - link "نسيت كلمة المرور؟" [ref=e48] [cursor=pointer]:
+                - /url: "#"
+            - textbox "كلمة المرور" [ref=e49]:
+              - /placeholder: ••••••••
+        - generic [ref=e50]:
+          - button "تسجيل الدخول" [ref=e51] [cursor=pointer]
+          - paragraph [ref=e52]:
+            - text: ليس لديك حساب؟
+            - link "إنشاء حساب" [ref=e53] [cursor=pointer]:
+              - /url: /auth/signup
+  - generic:
+    - img
+  - generic [ref=e54]:
+    - button "Toggle Nuxt DevTools" [ref=e55] [cursor=pointer]:
+      - img [ref=e56]
+    - generic "Page load time" [ref=e59]:
+      - generic [ref=e60]: "10"
+      - generic [ref=e61]: ms
+    - button "Toggle Component Inspector" [ref=e63] [cursor=pointer]:
+      - img [ref=e64]

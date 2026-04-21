@@ -304,4 +304,32 @@ const dateStr = computed(() =>
 .note-icon {
   font-size: 16px;
 }
+
+/* Mobile */
+@media (max-width: 767px) {
+  .room-header {
+    padding: 14px 16px;
+  }
+
+  .header-date { font-size: 12px; }
+  .header-time { font-size: 14px; }
+
+  .room-body { flex-direction: column; }
+
+  .serving-panel {
+    padding: 32px 24px;
+    order: 1;
+  }
+
+  .serving-num { font-size: 72px; }
+  .serving-name { font-size: 22px; text-align: center; }
+
+  .right-panel {
+    width: 100%;
+    order: 2;
+    padding: 24px 20px;
+    border-inline-start: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+  }
+}
 </style>

@@ -1,0 +1,51 @@
+- generic [ref=e5]:
+  - complementary [ref=e6]:
+    - link "العودة لقائمة الانتظار" [ref=e7] [cursor=pointer]:
+      - /url: /
+      - img [ref=e8]
+      - text: العودة لقائمة الانتظار
+    - generic [ref=e10]:
+      - generic [ref=e11]:
+        - generic [ref=e12]: "1"
+        - generic [ref=e13]: السبب
+      - generic [ref=e14]:
+        - generic [ref=e15]: "2"
+        - generic [ref=e16]: المدة
+      - generic [ref=e17]:
+        - generic [ref=e18]: "3"
+        - generic [ref=e19]: الألم
+      - generic [ref=e20]:
+        - generic [ref=e21]: "4"
+        - generic [ref=e22]: الأعراض
+      - generic [ref=e23]:
+        - generic [ref=e24]: "5"
+        - generic [ref=e25]: المستندات
+    - generic [ref=e26]:
+      - img [ref=e28]
+      - generic [ref=e31]:
+        - generic [ref=e32]: Dr. Ahmed Hassan
+        - generic [ref=e33]: أخصائي قلب
+  - main [ref=e34]:
+    - generic [ref=e35]:
+      - heading "سبب الزيارة" [level=2] [ref=e36]
+      - paragraph [ref=e37]: لماذا تزور الطبيب اليوم؟
+      - generic [ref=e38]:
+        - button "🩺 شكوى جديدة" [ref=e39] [cursor=pointer]:
+          - generic [ref=e41]: 🩺
+          - generic [ref=e42]: شكوى جديدة
+        - button "🔄 زيارة متابعة" [ref=e43] [cursor=pointer]:
+          - generic [ref=e45]: 🔄
+          - generic [ref=e46]: زيارة متابعة
+        - button "✅ فحص دوري" [ref=e47] [cursor=pointer]:
+          - generic [ref=e49]: ✅
+          - generic [ref=e50]: فحص دوري
+        - button "📋 مراجعة نتائج تحاليل" [ref=e51] [cursor=pointer]:
+          - generic [ref=e53]: 📋
+          - generic [ref=e54]: مراجعة نتائج تحاليل
+        - button "💊 تجديد روشتة" [ref=e55] [cursor=pointer]:
+          - generic [ref=e57]: 💊
+          - generic [ref=e58]: تجديد روشتة
+        - button "💬 أخرى" [ref=e59] [cursor=pointer]:
+          - generic [ref=e61]: 💬
+          - generic [ref=e62]: أخرى
+    - button "متابعة" [ref=e64] [cursor=pointer]
