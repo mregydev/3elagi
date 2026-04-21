@@ -104,8 +104,10 @@ function scrollReviews(dir: 'left' | 'right') {
         </div>
       </div>
 
-      <!-- Doctor Details card -->
-      <div class="m-card">
+      <div class="mobile-scroll">
+        <div class="mobile-inner">
+          <!-- Doctor Details card -->
+          <div class="m-card">
         <span class="card-label">{{ t('details.doctorDetails') }}</span>
         <div class="stats-row">
           <div v-for="s in [{v: String(doctor.experience), l: t('details.experience')}, {v: doctor.patients, l: t('details.patients')}, {v: `${doctor.rating}.0`, l: t('details.rating')}]" :key="s.l" class="stat-cell">
@@ -205,13 +207,18 @@ function scrollReviews(dir: 'left' | 'right') {
           </div>
         </div>
       </div>
+        </div>
+      </div>
 
     </div>
 
     <!-- ════════════════ DESKTOP ════════════════ -->
     <div class="desktop-view">
-      <AppNavBar />
+      <div class="d-top">
+        <AppNavBar />
+      </div>
 
+      <div class="d-scroll">
       <div class="d-content">
 
         <!-- Row 1: Doctor info + Map -->
@@ -344,6 +351,7 @@ function scrollReviews(dir: 'left' | 'right') {
         </div>
 
       </div>
+      </div>
     </div>
 
   </div>
@@ -352,7 +360,37 @@ function scrollReviews(dir: 'left' | 'right') {
 <style scoped>
 /* ── Page ────────────────────────────────────────── */
 .page { min-height: 100vh; }
-.mobile-view { display: flex; flex-direction: column; background: var(--gray-0); min-height: 100vh; }
+.mobile-view {
+  display: flex;
+  flex-direction: column;
+  background: var(--gray-0);
+  height: 100vh;
+  height: 100dvh;
+  max-height: 100dvh;
+  overflow: hidden;
+  min-height: 0;
+}
+.mobile-scroll {
+  flex: 1;
+  min-height: 0;
+  min-width: 0;
+  width: 100%;
+  max-width: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
+}
+
+.mobile-inner {
+  width: 100%;
+  max-width: 560px;
+  margin-inline: auto;
+  padding: 10px 14px 24px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
 .desktop-view { display: none; }
 
 /* ── Shared ──────────────────────────────────────── */
@@ -602,13 +640,12 @@ function scrollReviews(dir: 'left' | 'right') {
   border: 1px solid var(--gray-1);
   border-radius: 12px;
   padding: 14px;
-  margin: 10px 14px 0;
   display: flex;
   flex-direction: column;
   gap: 12px;
 }
 .m-card-no-gap { gap: 0; padding: 0; overflow: hidden; }
-.m-card-last { margin-bottom: 24px; }
+.m-card-last { }
 
 .stats-row { display: flex; gap: 8px; }
 .stat-cell {
@@ -650,17 +687,34 @@ function scrollReviews(dir: 'left' | 'right') {
   .desktop-view {
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    height: 100vh;
+    height: 100dvh;
+    max-height: 100dvh;
+    min-height: 0;
+    overflow: hidden;
     background: var(--gray-0);
   }
 
-  .d-content {
+  .d-top {
+    flex-shrink: 0;
+  }
+
+  .d-scroll {
     flex: 1;
+    min-height: 0;
+    min-width: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .d-content {
+    min-height: 0;
+    min-width: 0;
     padding: 24px 28px 120px;
     display: flex;
     flex-direction: column;
     gap: 16px;
-    overflow-y: auto;
     max-width: 1200px;
     margin: 0 auto;
     width: 100%;
