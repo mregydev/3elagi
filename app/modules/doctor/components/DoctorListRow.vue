@@ -125,9 +125,10 @@ function handleChange(val: CalendarValue) {
   display: flex;
   flex-direction: column;
   gap: 18px;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.13);
   transition: box-shadow 0.15s;
 }
-.row:hover { box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08); }
+.row:hover { box-shadow: 0 6px 24px rgba(0, 0, 0, 0.13); }
 
 /* ── Left column ──────────────────────────────────── */
 .left {
