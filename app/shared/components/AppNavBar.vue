@@ -51,11 +51,19 @@ const FLAG_EG = 'https://flagcdn.com/w40/eg.png'
         <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
           <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
         </svg>
-        {{ t('nav.chat') }}
+        {{ t('nav.chat') }} 
       </NuxtLink>
     </nav>
 
     <div class="nav-actions">
+      <!-- Mobile/tablet: keep chat visible in header (nav-links is hidden) -->
+      <NuxtLink to="/?view=chat" class="chat-mobile" :title="t('nav.chat')">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true">
+          <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+        </svg>
+        <div class="chat-mobile-label">{{ t('nav.chat') }}</div>
+      </NuxtLink>
+
       <div ref="langRoot" class="lang-switcher">
         <button
           type="button"
@@ -199,6 +207,34 @@ const FLAG_EG = 'https://flagcdn.com/w40/eg.png'
   display: flex;
   gap: 8px;
   align-items: center;
+}
+
+/* Mobile/tablet chat shortcut (desktop uses nav-links) */
+.chat-mobile {
+  display: none;
+  align-items: center;
+  gap: 6px;
+  height: 30px;
+  padding: 0 10px;
+  border-radius: 999px;
+  border: 1.5px solid var(--gray-1);
+  background: var(--white);
+  color: var(--blue-m);
+  font-size: 12px;
+  font-weight: 800;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.chat-mobile-label {
+  line-height: 1.05;
+  text-align: center;
+}
+
+.nav.dark .chat-mobile {
+  border-color: rgba(255, 255, 255, 0.35);
+  background: rgba(255, 255, 255, 0.08);
+  color: var(--white);
 }
 
 /* ── Language dropdown ──────────────────────────── */
@@ -416,6 +452,18 @@ const FLAG_EG = 'https://flagcdn.com/w40/eg.png'
 
   .nav-links { display: none; }
 
+  .chat-mobile {
+    display: inline-flex;
+    width: 100%;
+    height: 44px;
+    border-radius: 12px;
+    justify-content: center;
+    gap: 8px;
+    padding: 0 12px;
+  }
+
+  .chat-mobile-label { white-space: nowrap; }
+
   .lang-switcher {
     position: absolute;
     top: 14px;
@@ -450,6 +498,8 @@ const FLAG_EG = 'https://flagcdn.com/w40/eg.png'
   }
 
   .nav-links { display: flex; }
+
+  .chat-mobile { display: none; }
 
   .lang-switcher { position: relative; }
 

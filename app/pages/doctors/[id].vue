@@ -90,6 +90,15 @@ function scrollReviews(dir: 'left' | 'right') {
             </svg>
           </button>
           <span class="m-header-title">{{ t('details.doctorDetails') }}</span>
+          <NuxtLink
+            class="chat-btn"
+            :to="{ path: '/', query: { view: 'chat', doctorId: doctor.id } }"
+          >
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+              <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+            </svg>
+            <span class="chat-label">{{ t('common.chat') }}</span>
+          </NuxtLink>
         </div>
         <div class="m-hero">
           <img class="m-avatar" :src="doctor.image" :alt="doctor.name" />
@@ -617,7 +626,37 @@ function scrollReviews(dir: 'left' | 'right') {
 }
 .m-header-top { display: flex; align-items: center; gap: 8px; margin-bottom: 14px; }
 .back-btn { background: none; border: none; padding: 0; display: flex; align-items: center; cursor: pointer; }
-.m-header-title { font-size: 15px; font-weight: 600; color: var(--white); }
+.m-header-title {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--white);
+  flex: 1;
+  min-width: 0;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.chat-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  height: 30px;
+  padding: 0 10px;
+  border-radius: 999px;
+  border: 1px solid rgba(255,255,255,0.45);
+  background: rgba(255,255,255,0.12);
+  color: var(--white);
+  text-decoration: none;
+  flex-shrink: 0;
+}
+
+.chat-label {
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1;
+}
 
 .m-hero { display: flex; gap: 12px; align-items: center; }
 .m-avatar {
