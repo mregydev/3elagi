@@ -10,6 +10,8 @@ withDefaults(defineProps<Props>(), {
 })
 
 const { locale, setLocale, t } = useI18n()
+const route = useRoute()
+const isChatActive = computed(() => route.query.view === 'chat')
 
 const langRoot = ref<HTMLElement | null>(null)
 const langOpen = ref(false)
@@ -45,6 +47,12 @@ const FLAG_EG = 'https://flagcdn.com/w40/eg.png'
       <NuxtLink to="/">{{ t('nav.findDoctors') }}</NuxtLink>
       <NuxtLink to="/specialties">{{ t('nav.specialties') }}</NuxtLink>
       <NuxtLink to="/how-it-works">{{ t('nav.howItWorks') }}</NuxtLink>
+      <NuxtLink to="/?view=chat" class="chat-nav-link" :class="{ active: isChatActive }">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+        </svg>
+        {{ t('nav.chat') }}
+      </NuxtLink>
     </nav>
 
     <div class="nav-actions">
@@ -164,6 +172,28 @@ const FLAG_EG = 'https://flagcdn.com/w40/eg.png'
 }
 
 .nav-links a:hover { color: var(--blue-m); }
+
+.chat-nav-link {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 5px 12px;
+  border-radius: 20px;
+  border: 1.5px solid var(--gray-1);
+  background: var(--white);
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--gray-4) !important;
+  transition: all 0.15s;
+  white-space: nowrap;
+}
+
+.chat-nav-link:hover,
+.chat-nav-link.active {
+  background: var(--blue-m);
+  border-color: var(--blue-m);
+  color: var(--white) !important;
+}
 
 .nav-actions {
   display: flex;
