@@ -51,8 +51,15 @@ const FLAG_EG = 'https://flagcdn.com/w40/eg.png'
         <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
           <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
         </svg>
-        {{ t('nav.chat') }} 
+        {{ t('nav.chat') }}
       </NuxtLink>
+      <a href="https://3elagi-doctor.vercel.app/3eyadahub/auth" target="_blank" rel="noopener noreferrer" class="portal-nav-link">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+          <polyline points="9 22 9 12 15 12 15 22"/>
+        </svg>
+        {{ t('nav.doctorPortal') }}
+      </a>
     </nav>
 
     <div class="nav-actions">
@@ -63,6 +70,13 @@ const FLAG_EG = 'https://flagcdn.com/w40/eg.png'
         </svg>
         <div class="chat-mobile-label">{{ t('nav.chat') }}</div>
       </NuxtLink>
+      <a href="https://3elagi-doctor.vercel.app/3eyadahub/auth" target="_blank" rel="noopener noreferrer" class="portal-mobile" :title="t('nav.doctorPortal')">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true">
+          <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+          <polyline points="9 22 9 12 15 12 15 22"/>
+        </svg>
+        <div class="portal-mobile-label">{{ t('nav.doctorPortal') }}</div>
+      </a>
 
       <div ref="langRoot" class="lang-switcher">
         <button
@@ -203,6 +217,31 @@ const FLAG_EG = 'https://flagcdn.com/w40/eg.png'
   color: var(--white) !important;
 }
 
+.portal-nav-link {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 5px 14px;
+  border-radius: 20px;
+  border: none;
+  background: linear-gradient(135deg, #059669 0%, #10b981 100%);
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--white) !important;
+  text-decoration: none;
+  white-space: nowrap;
+  box-shadow: 0 2px 8px rgba(5, 150, 105, 0.35);
+  transition: all 0.18s;
+  letter-spacing: 0.01em;
+}
+
+.portal-nav-link:hover {
+  background: linear-gradient(135deg, #047857 0%, #059669 100%);
+  box-shadow: 0 4px 14px rgba(5, 150, 105, 0.45);
+  transform: translateY(-1px);
+  color: var(--white) !important;
+}
+
 .nav-actions {
   display: flex;
   gap: 8px;
@@ -227,6 +266,34 @@ const FLAG_EG = 'https://flagcdn.com/w40/eg.png'
 }
 
 .chat-mobile-label {
+  line-height: 1.05;
+  text-align: center;
+}
+
+.portal-mobile {
+  display: none;
+  align-items: center;
+  gap: 6px;
+  height: 30px;
+  padding: 0 10px;
+  border-radius: 999px;
+  border: none;
+  background: linear-gradient(135deg, #059669 0%, #10b981 100%);
+  color: var(--white);
+  font-size: 12px;
+  font-weight: 800;
+  text-decoration: none;
+  white-space: nowrap;
+  box-shadow: 0 2px 8px rgba(5, 150, 105, 0.3);
+  transition: all 0.18s;
+}
+
+.portal-mobile:hover {
+  background: linear-gradient(135deg, #047857 0%, #059669 100%);
+  box-shadow: 0 4px 14px rgba(5, 150, 105, 0.4);
+}
+
+.portal-mobile-label {
   line-height: 1.05;
   text-align: center;
 }
@@ -463,6 +530,18 @@ const FLAG_EG = 'https://flagcdn.com/w40/eg.png'
   }
 
   .chat-mobile-label { white-space: nowrap; }
+
+  .portal-mobile {
+    display: inline-flex;
+    width: 100%;
+    height: 44px;
+    border-radius: 12px;
+    justify-content: center;
+    gap: 8px;
+    padding: 0 12px;
+  }
+
+  .portal-mobile-label { white-space: nowrap; }
 
   .lang-switcher {
     position: absolute;

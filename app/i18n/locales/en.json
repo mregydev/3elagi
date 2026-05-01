@@ -33,6 +33,7 @@
     "specialties": "Specialties",
     "howItWorks": "How it works",
     "chat": "Chat with Doctor",
+    "doctorPortal": "Doctor Portal",
     "chatPanel": {
       "templates": "Templates",
       "requestAttachment": "Request Attachment",
