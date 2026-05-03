@@ -53,13 +53,13 @@ const FLAG_EG = 'https://flagcdn.com/w40/eg.png'
         </svg>
         {{ t('nav.chat') }}
       </NuxtLink>
-      <a href="https://3elagi-doctor.vercel.app/3eyadahub/auth" target="_blank" rel="noopener noreferrer" class="portal-nav-link">
+      <NuxtLink href="https://3elagi-doctor.vercel.app" target="_blank" rel="noopener noreferrer" class="portal-nav-link p-10">
         <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
           <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
           <polyline points="9 22 9 12 15 12 15 22"/>
         </svg>
         {{ t('nav.doctorPortal') }}
-      </a>
+      </NuxtLink>
     </nav>
 
     <div class="nav-actions">
@@ -70,7 +70,7 @@ const FLAG_EG = 'https://flagcdn.com/w40/eg.png'
         </svg>
         <div class="chat-mobile-label">{{ t('nav.chat') }}</div>
       </NuxtLink>
-      <a href="https://3elagi-doctor.vercel.app/3eyadahub/auth" target="_blank" rel="noopener noreferrer" class="portal-mobile" :title="t('nav.doctorPortal')">
+      <a href="https://3elagi-doctor.vercel.app" target="_blank" rel="noopener noreferrer" class="portal-mobile" :title="t('nav.doctorPortal')">
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true">
           <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
           <polyline points="9 22 9 12 15 12 15 22"/>
